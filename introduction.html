@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/menu.responsive.js"></script>
+    <script src="./js/button.link.js"></script>
+    <script src="./js/pagination.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js" type="module"></script>
+
+    <style>
+      .fade-in-right {
+        animation: fade-in-right 0.5s ease-out;
+      }
+
+      @keyframes fade-in-right {
+        0% {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .fade-out-right {
+        animation: fade-out-right 0.5s ease-out;
+      }
+
+      @keyframes fade-out-right {
+        0% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+      }
+    </style>
+
+    <title>Lavale</title>
+  </head>
+
+  <body class="relative p-0 m-0 w-full h-full overflow-x-hidden contain">
+    <header
+      class="relative p-0 w-full z-0 overflow-hidden aspect-[375/718] flex items-center z-2 bg-[url('./img/cover.jfif')] bg-center bg-no-repeat bg-cover md:aspect-[834/740] lg:aspect-[1440/795]"
+    >
+      <!-- <img src="./img/cover.jfif" class="h-full aspect-[427/640]" /> -->
+
+      <div
+        class="absolute left-0 top-0 w-full z-8 bg-black/30 aspect-[375/718] md:aspect-[834/740] lg:aspect-[1440/795]"
+      >
+        <div
+          class="w-full flex-row items-center hidden justify-center bg-gradient-to-b from-lavalemenu/40 md:flex md:aspect-[834/140] lg:aspect-[1440/140]"
+          data-menu="full-menu"
+        >
+          <div class="w-[38%] flex items-end justify-end">
+            <a
+              class="h-6 leading-6 uppercase mr-[15%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+              href="/"
+            >
+              Trang Chủ
+            </a>
+            <a
+              href="/introduction.html"
+              class="h-6 leading-6 uppercase mr-[15%] text-active border-b-[3px] hover:cursor-pointer border-active"
+            >
+              Giới thiệu
+            </a>
+            <a
+              href="/products.html"
+              class="h-6 leading-6 uppercase mr-[15%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+            >
+              Sản phẩm
+            </a>
+          </div>
+          <img src="./img//logo.png" class="h-full" />
+          <div class="w-[38%] flex">
+            <a
+              href="/"
+              class="h-6 leading-6 uppercase ml-[15%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+            >
+              Thư viện ảnh
+            </a>
+            <a
+              href="/"
+              class="h-6 leading-6 uppercase ml-[15%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+            >
+              Tin tức
+            </a>
+            <a
+              href="/contact.html"
+              class="h-6 leading-6 uppercase ml-[15%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+            >
+              Liên hệ
+            </a>
+          </div>
+        </div>
+        <div
+          class="relative w-full flex-row items-center flex justify-center align-center aspect-[375/70] bg-gradient-to-b from-lavalemenu/40 md:hidden"
+          data-menu="simple-menu-show"
+        >
+          <!-- <img src="./img/logo1.png" class="h-full"> -->
+          <div
+            class="bg-center bg-no-repeat bg-cover bg-logo h-full aspect-[94.35/70]"
+          ></div>
+          <div
+            class="absolute h-full top-0 right-0 flex items-center flex-col justify-center pr-8"
+            data-menu="toggle-open"
+          >
+            <img src="./img/menu.svg" class="h-[23%] float-right" />
+          </div>
+        </div>
+        <div
+          class="flex flex-col w-full aspect-[375/648] px-4 m-auto align-center justify-center items-center md:aspect-[834/600] lg:aspect-[1280/655] lg:w-[88.89%]"
+        >
+          <h1
+            class="w-full text-center text-6xl text-white font-bold font-display mb-12 capitalize"
+          >
+            Lavale Distillery
+          </h1>
+          <span
+            class="block w-full text-xl text-center text-white leading-8 font-monsterrat font-medium max-w-[832px]"
+          >
+            Nhà sáng lập của chúng tôi là nhóm cổ đông từ đa ngành trong lĩnh
+            vực cuộc sống nhưng có chung một niềm đam mê. Giữ gìn nét truyền
+            thống và mong muốn nhiều hơn thế, Lavale mong muốn nâng tầm rượu
+            Việt để vươn ra khắp năm châu, tạo nên sự tự hào của quốc hồn quốc
+            túy cho những giọt rượu cất trên mảnh đất hình chữ S nghìn năm văn
+            hiến. 
+          </span>
+        </div>
+      </div>
+
+      <div
+        class="absolute left-0 top-0 z-10 h-full bg-lavale aspect-[375/718] hidden"
+        data-menu="simple-menu-popup"
+      >
+        <div class="relative w-full h-full">
+          <div
+            class="absolute left-0 top-0 w-full z-10 aspect-[375/718] md:aspect-[834/740] lg:aspect-[1440/795]"
+          >
+            <div
+              class="relative w-full flex-row items-center flex justify-center align-center aspect-[375/70] bg-gradient-to-b from-lavalemenu/40 md:hidden mb-10px"
+            >
+              <!-- <img src="./img/logo1.png" class="h-full"> -->
+              <div
+                class="bg-center bg-no-repeat bg-cover bg-logo h-full aspect-[94.35/70]"
+              ></div>
+              <div
+                class="absolute h-full top-0 right-0 flex items-center flex-col justify-center pr-8"
+                data-menu="toggle-close"
+              >
+                <img src="./img/close.svg" class="h-[23%] float-right" />
+              </div>
+            </div>
+
+            <div
+              class="w-full flex flex-col justify-center align-center items-center pt-[32px]"
+            >
+              <a
+                href="/"
+                class="h-6 leading-[24px] text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+              >
+                Trang Chủ
+              </a>
+              <a
+                href="/introduction.html"
+                class="block h-6 leading-[24px] text-[16px] font-semibold uppercase text-active border-b-[3px] hover:cursor-pointer border-active text-center mb-[32px]"
+              >
+                Giới thiệu
+              </a>
+              <a
+                href="/products.html"
+                class="h-6 leading-[24px] text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+              >
+                Sản phẩm
+              </a>
+              <a
+                href="/"
+                class="h-6 leading-[24px] text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+              >
+                Thư viện ảnh
+              </a>
+              <a
+                href="/"
+                class="h-6 leading-[24px] text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+              >
+                Tin tức
+              </a>
+              <a
+                href="/contact.html"
+                class="h-6 leading-[24px] text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+              >
+                Liên hệ
+              </a>
+            </div>
+          </div>
+          <div
+            class="fixed w-full bottom-0 left-0 flex flex-col align-center justify-center items-center"
+          >
+            <div class="flex flex-row mb-[4px]">
+              <span
+                class="text-[15px] leading-[24px] mr-[10px] font-monsterrat text-white/60"
+                >Điện thoại</span
+              >
+              <span
+                class="text-[15px] leading-[24px] font-monsterrat text-white"
+                >0972897891</span
+              >
+            </div>
+            <div class="flex flex-row">
+              <span
+                class="text-[15px] leading-[24px] mr-[10px] font-monsterrat text-white/60 mb-10px"
+                >Email</span
+              >
+              <span
+                class="text-[15px] leading-[24px] font-monsterrat text-white"
+                >cskh@lavale.vn</span
+              >
+            </div>
+            <div class="w-full flex flex-row py-[16px]">
+              <span
+                class="w-full text-center font-monsterrat text-white/60 font-semibold text-[12px] leading-[20px]"
+                >© LAVALE 2024</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="absolute w-full bottom-[-2px] aspect-[375/72] z-9 bg-center bg-no-repeat bg-cover bg-spliter rotate-180 scale-x-[-1] border-0 p-0 md:aspect-[834/72] lg:aspect-[1440/72]"
+      ></div>
+    </header>
+
+    <section class="relative bg-lavale w-full h-fit overflow-hidden z-1">
+      <div class="w-full bg-transparent z-9">
+        <div
+          class="flex flex-col w-[91.5%] mx-auto items-center align-center justify-center z-10 my-[88px] md:w-[92.3%]"
+        >
+          <div
+            class="flex flex-col w-full justify-between align-center gap-[32px] md:aspect-[834/552] lg:aspect-[1280/464] md:flex-row lg:w-[90%]"
+          >
+            <div
+              class="relative h-full min-h-max flex-1 flex flex-col items-center px-2 py-16 bg-lavaledark rounded-md"
+            >
+              <img
+                src="./img/spliter.png"
+                class="w-full aspect-[333/24] absolute scale-x-[-1] top-[-1px] left-0"
+              />
+              <img
+                src="./img/spliter-vertical.png"
+                class="h-full aspect-[24/464] absolute scale-y-[-1] top-0 left-[-1px]"
+              />
+              <img
+                src="./img/spliter-vertical.png"
+                class="h-full aspect-[24/464] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+              />
+              <img
+                src="./img/spliter.png"
+                class="w-full aspect-[333/24] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+              />
+
+              <img
+                src="./img/introduction1.svg"
+                class="w-[40%] aspect-[1/1] mb-[56px]"
+              />
+
+              <div class="w-[80.7%]">
+                <span
+                  class="w-full block font-monsterrat font-medium text-[20px] leading-[32px] text-center mb-[16px] text-white"
+                  >Cây</span
+                >
+                <p
+                  class="w-full block font-monsterrat text-[16px] leading-[24px] text-center text-[#f5f2e3]"
+                >
+                  Là biểu tượng của táo hóa đại diện cho quả cây trĩu mọng, sản
+                  vật tinh hoa của đất trời Việt Nam.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="relative h-full min-h-max flex-1 flex flex-col items-center px-2 py-16 bg-lavaledark rounded-md"
+            >
+              <img
+                src="./img/spliter.png"
+                class="w-full aspect-[333/24] absolute scale-x-[-1] top-[-1px] left-0"
+              />
+              <img
+                src="./img/spliter-vertical.png"
+                class="h-full aspect-[24/464] absolute scale-y-[-1] top-0 left-[-1px]"
+              />
+              <img
+                src="./img/spliter-vertical.png"
+                class="h-full aspect-[24/464] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+              />
+              <img
+                src="./img/spliter.png"
+                class="w-full aspect-[333/24] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+              />
+
+              <img
+                src="./img/introduction2.svg"
+                class="w-[40%] aspect-[1/1] mb-[56px]"
+              />
+
+              <div class="w-[80.7%]">
+                <span
+                  class="w-full block font-monsterrat font-medium text-[20px] leading-[32px] text-center mb-[16px] text-white"
+                  >Ngọn núi</span
+                >
+                <p
+                  class="w-full block font-monsterrat text-[16px] leading-[24px] text-center text-[#f5f2e3]"
+                >
+                  Núi là biểu tượng mạnh mẽ cho sự tự tin, phiêu lưu và chinh
+                  phục. Chúng cũng đại diện cho thiên nhiên và sự mở rộng của
+                  không gian ngoài trời cũng như tinh thần sảng khoái khi thưởng
+                  thức chất rượu Lavale
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="relative h-full min-h-max flex-1 flex flex-col items-center px-2 py-16 bg-lavaledark rounded-md"
+            >
+              <img
+                src="./img/spliter.png"
+                class="w-full aspect-[333/24] absolute scale-x-[-1] top-[-1px] left-0"
+              />
+              <img
+                src="./img/spliter-vertical.png"
+                class="h-full aspect-[24/464] absolute scale-y-[-1] top-0 left-[-1px]"
+              />
+              <img
+                src="./img/spliter-vertical.png"
+                class="h-full aspect-[24/464] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+              />
+              <img
+                src="./img/spliter.png"
+                class="w-full aspect-[333/24] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+              />
+
+              <img
+                src="./img/introduction3.svg"
+                class="w-[40%] aspect-[1/1] mb-[56px]"
+              />
+
+              <div class="w-[80.7%]">
+                <span
+                  class="w-full block font-monsterrat font-medium text-[20px] leading-[32px] text-center mb-[16px] text-white"
+                  >Hạt gạo - Ngọc thực</span
+                >
+                <p
+                  class="w-full block font-monsterrat text-[16px] leading-[24px] text-center text-[#f5f2e3]"
+                >
+                  Hạt gạo hình ảnh gắn liền với nền văn hóa lúa nước đất Việt,
+                  và cũng là tinh túy cốt lõi khi chưng cất rượu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative w-full bg-lavaledark z-9">
+        <div
+          class="w-full aspect-[375/72] top-[-1px] left-0 bg-center bg-no-repeat bg-cover bg-spliter scale-x-[-1] border-0 p-0 md:aspect-[834/72] lg:aspect-[1440/72]"
+        ></div>
+        <div
+          class="flex flex-col w-[91.5%] mx-auto items-center align-center justify-center z-10 my-[88px] md:w-[92.3%]"
+        >
+          <h1
+            class="w-full text-center text-[48px] leading-[64px] text-white font-semibold font-display capitalize mb-[24px]"
+          >
+            Hình Thành
+          </h1>
+          <span
+            class="block w-full text-[20px] leading-[32px] text-center text-white/60 font-medium font-monsterrat mb-[32px]"
+          >
+            Lavale mang lại sự hưng phấn tự tại, niềm vui, sự thân mật và sảng
+            khoái nhưng không với cái giá của đau đầu, mệt mỏi, khát nước của
+            ngày mai tỉnh dậy.
+          </span>
+
+          <img src="./img/start2.svg" class="mb-[32px]" />
+
+          <div
+            class="flex flex-col w-full justify-center items-center align-center md:aspect-[770/424] md:flex-row lg:aspect-[1280/280]"
+          >
+            <div
+              class="w-full font-display font-semibold text-[48px] leading-[64px] text-left text-white md:w-[50%] md:h-full md:text-right md:pr-[56px]"
+              data-aos="fade-left"
+            >
+              29.12.1964
+            </div>
+            <div
+              class="w-[6px] h-full bg-[#dddddd]/[86.67%] opacity-[86.67%] rounded-2xl"
+              data-aos="fade-up"
+            ></div>
+            <div
+              class="w-full md:w-[50%] md:h-full md:pl-[56px]"
+              data-aos="fade-right"
+            >
+              <h1
+                class="capitalize w-full font-display font-semibold text-[48px] leading-[64px] text-white mb-[24px]"
+              >
+                Hương vị
+              </h1>
+              <p
+                class="block w-full font-monsterrat text-[15px] leading-[24px] text-white/60"
+              >
+                Chúng tôi luôn lựa chọn những nguyên liệu đắt nhất, tốt nhất của
+                đất nước để tạo ra chất rượu của mình. Quan trọng nhất là nguồn
+                nước chúng tôi lấy từ nguồn nước đá ong, với lõi lọc tự nhiên là
+                lớp đá ong hàng ngàn lớp chảy qua thời gian sẽ cho nguồn nước
+                tinh khiết nhất. Kiểm nghiệm nguồn nước của chúng tôi cho tỉ lệ
+                tinh khiết gấp 6 lần ngưỡng nước uống thông thường. Cốt rượu
+                được nấu thêm với men thuốc bắc 36 vị thuốc, gạo nếp Điện Biên
+                loại 1. Rượu sau khi chưng cất sẽ chạy qua máy khử độc tố loại
+                bỏ adehyde, methanol... và ngâm trong chum tối thiểu 1 năm
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full aspect-[375/72] bg-lavaledark flex justify-center align-center items-center border-0 p-0 my-[32px] md:aspect-[834/72] lg:aspect-[1440/72]"
+            data-aos="fade-up"
+          >
+            <img src="img/spliter-diamond.svg" />
+          </div>
+
+          <div
+            class="flex flex-col-reverse w-full justify-center items-center align-center md:aspect-[770/424] md:flex-row lg:aspect-[1280/280]"
+          >
+            <div
+              class="w-full md:w-[50%] md:h-full md:pr-[56px]"
+              data-aos="fade-left"
+            >
+              <h1
+                class="capitalize w-full font-display font-semibold text-[48px] leading-[64px] text-white mb-[24px] md:text-right"
+              >
+                Cốt rượu
+              </h1>
+              <p
+                class="block w-full font-monsterrat text-[15px] leading-[24px] text-white/60 md:text-right"
+              >
+                Để tạo nên hương vị, chúng tôi đi khắp các cao nguyên miền Bắc,
+                rừng núi sâu xa để lựa chọn những trái cây chín mọng, to và đều
+                nhất. Kết hợp với đơn vị sản xuất đường số 1 Việt Nam, chúng tôi
+                đặt hàng tinh chế đường phèn loại 1 để cho hương vị ngọt thanh
+                ko sắc. Tất cả thành phần sử dụng đều hoàn toàn tự nhiên 100%,
+                không có bất kỳ hương liệu hoặc thành phần hóa học. Cuộc hôn
+                nhân giữa hương vị và cốt rượu sau đó diễn ra thêm 1 năm nữa
+                trong chum đất ko tráng men tạo nên sự hòa quyện giữa hương và
+                tửu.
+              </p>
+            </div>
+            <div
+              class="w-[6px] h-full bg-[#dddddd]/[86.67%] opacity-[86.67%] rounded-2xl"
+              data-aos="fade-up"
+            ></div>
+            <div
+              class="w-full font-display font-semibold text-[48px] leading-[64px] text-left text-white md:w-[50%] md:pl-[56px] md:h-full"
+              data-aos="fade-right"
+            >
+              02.02.1965
+            </div>
+          </div>
+
+          <div
+            class="relative w-full aspect-[375/72] bg-lavaledark flex justify-center align-center items-center border-0 p-0 my-[32px] md:aspect-[834/72] lg:aspect-[1440/72]"
+            data-aos="fade-up"
+          >
+            <img src="img/spliter-diamond.svg" />
+          </div>
+
+          <div
+            class="flex flex-col w-full justify-center items-center align-center md:aspect-[770/424] md:flex-row lg:aspect-[1280/280]"
+          >
+            <div
+              class="w-full font-display font-semibold text-[48px] leading-[64px] text-left text-white md:w-[50%] md:h-full md:text-right md:pr-[56px]"
+              data-aos="fade-left"
+            >
+              29.12.1964
+            </div>
+            <div
+              class="w-[6px] h-full bg-[#dddddd]/[86.67%] opacity-[86.67%] rounded-2xl"
+              data-aos="fade-up"
+            ></div>
+            <div
+              class="w-full md:w-[50%] md:h-full md:pl-[56px]"
+              data-aos="fade-right"
+            >
+              <h1
+                class="capitalize w-full font-display font-semibold text-[48px] leading-[64px] text-white mb-[24px]"
+              >
+                Tinh hoa
+              </h1>
+              <p
+                class="block w-full font-monsterrat text-[15px] leading-[24px] text-white/60"
+              >
+                Chúng tôi luôn lựa chọn những nguyên liệu đắt nhất, tốt nhất của
+                đất nước để tạo ra chất rượu của mình. Quan trọng nhất là nguồn
+                nước chúng tôi lấy từ nguồn nước đá ong, với lõi lọc tự nhiên là
+                lớp đá ong hàng ngàn lớp chảy qua thời gian sẽ cho nguồn nước
+                tinh khiết nhất. Kiểm nghiệm nguồn nước của chúng tôi cho tỉ lệ
+                tinh khiết gấp 6 lần ngưỡng nước uống thông thường. Cốt rượu
+                được nấu thêm với men thuốc bắc 36 vị thuốc, gạo nếp Điện Biên
+                loại 1. Rượu sau khi chưng cất sẽ chạy qua máy khử độc tố loại
+                bỏ adehyde, methanol... và ngâm trong chum tối thiểu 1 năm
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-full aspect-[375/72] bottom-[-1px] left-0 bg-center bg-no-repeat bg-cover bg-spliter scale-x-[-1] rotate-180 border-0 p-0 md:aspect-[834/72] lg:aspect-[1440/72]"
+        ></div>
+      </div>
+
+      <div class="relative w-full bg-lavale z-9">
+        <div
+          class="flex flex-col w-[88.89%] mx-auto items-center align-center justify-center p-0 my-24 z-10 md:my-[88px]"
+        >
+          <h1
+            class="w-full text-center text-5xl text-white font-display mb-4 capitalize"
+          >
+            Hình Thành
+          </h1>
+          <span
+            class="block w-full text-xl text-center text-white/60 font-medium font-monsterrat mb-12"
+          >
+            Lavale mang lại sự hưng phấn tự tại, niềm vui, sự thân mật và sảng
+            khoái nhưng không với cái giá của đau đầu, mệt mỏi, khát nước của
+            ngày mai tỉnh dậy.
+          </span>
+        </div>
+      </div>
+
+      <div class="w-full bg-transparent z-9">
+        <div
+          class="flex flex-col w-[91.5%] mx-auto items-center align-center justify-center md:flex-row md:w-[92.3%] lg:aspect-[770/240] lg:w-[88.89%] lg:aspect-[1280/480]"
+        >
+          <div
+            class="relative w-full aspect-[343/240] md:w-[48.4%] md:aspect-[373/240] lg:w-[57%] lg:aspect-[733/480]"
+            data-aos="fade-left"
+          >
+            <img
+              src="./img/spliter.png"
+              class="w-full aspect-[733/24] absolute scale-x-[-1] top-[-1px] left-0"
+            />
+            <img
+              src="./img/spliter-vertical.png"
+              class="h-full aspect-[24/480] absolute scale-y-[-1] top-0 left-[-1px]"
+            />
+            <img
+              src="./img/spliter-vertical.png"
+              class="h-full aspect-[24/480] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+            />
+            <img
+              src="./img/spliter.png"
+              class="w-full aspect-[733/24] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+            />
+            <img src="./img/timeline1.jfif" class="w-full h-full rounded-md" />
+          </div>
+          <div
+            class="flex flex-col w-full items-start align-start justify-center mt-8 mb-16 md:w-[51.6%] md:aspect-[397/240] md:mt-0 md:mb-0 lg:w-[43%] lg:aspect-[547/480]"
+            data-aos="fade-right"
+          >
+            <h1
+              class="w-full font-display text-5xl text-white mb-4 capitalize md:text-left md:pl-6 lg:pl-14"
+            >
+              Khởi Nguồn Từ Núi Rừng
+            </h1>
+            <span
+              class="block w-full font-monsterrat text-base text-white/60 md:text-left md:pl-6 lg:pl-14"
+            >
+              Giấc mơ làm rượu từ trái cây vùng núi là khát vọng của nhiều người
+              đam mê. Trái cây vùng núi không chỉ ngọt ngào và thơm ngon mà còn
+              mang trong mình hương vị đặc trưng của thiên nhiên hoang dã.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-transparent z-9 aspect-[1440/64]"></div>
+
+      <div class="w-full bg-transparent z-9">
+        <div
+          class="flex flex-col-reverse w-[91.5%] mx-auto items-center align-center justify-center md:flex-row md:w-[92.3%] lg:aspect-[770/240] lg:w-[88.89%] lg:aspect-[1280/480]"
+        >
+          <div
+            class="flex flex-col w-full items-start align-start justify-center mt-8 mb-16 md:w-[51.6%] md:aspect-[397/240] md:mt-0 md:mb-0 lg:w-[43%] lg:aspect-[547/480]"
+            data-aos="fade-left"
+          >
+            <h1
+              class="w-full font-display text-5xl text-white mb-4 capitalize md:text-left md:pr-6 lg:pr-14"
+            >
+              Nuôi dưỡng bởi đam mê
+            </h1>
+            <span
+              class="block w-full font-monsterrat text-base text-white/60 md:text-left md:pr-6 lg:pr-14"
+            >
+              Nghiên cứu làm rượu trái cây từ nguyên liệu vùng núi phía Bắc mang
+              đến cơ hội tận dụng những trái cây chất lượng cao và nguồn nước
+              tinh khiết đặc trưng của vùng này. Lavale không chỉ là sản phẩm
+              chất lượng cao mà còn là sự kết nối với vẻ đẹp và sự kỳ diệu của
+              vùng đất này
+            </span>
+          </div>
+          <div
+            class="relative w-full aspect-[343/240] md:w-[48.4%] md:aspect-[373/240] lg:w-[57%] lg:aspect-[733/480]"
+            data-aos="fade-right"
+          >
+            <img
+              src="./img/spliter.png"
+              class="w-full aspect-[733/24] absolute scale-x-[-1] top-[-1px] left-0"
+            />
+            <img
+              src="./img/spliter-vertical.png"
+              class="h-full aspect-[24/480] absolute scale-y-[-1] top-0 left-[-1px]"
+            />
+            <img
+              src="./img/spliter-vertical.png"
+              class="h-full aspect-[24/480] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+            />
+            <img
+              src="./img/spliter.png"
+              class="w-full aspect-[733/24] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+            />
+            <img src="./img/timeline2.jfif" class="w-full h-full rounded-md" />
+          </div>
+        </div>
+      </div>
+
+      <div class="relative w-full bg-lavaledark z-9">
+        <div
+          class="w-full aspect-[375/72] top-[-1px] left-0 bg-center bg-no-repeat bg-cover bg-spliter scale-x-[-1] border-0 p-0 md:aspect-[834/72] lg:aspect-[1440/72]"
+        ></div>
+        <div
+          class="flex flex-col w-[88.89%] mx-auto items-center align-center justify-center p-0 my-24 z-10 md:my-[88px]"
+        >
+          <h1
+            class="w-full text-center text-5xl text-white font-display mb-4 capitalize"
+          >
+            Tầm nhìn
+          </h1>
+          <span
+            class="block w-full text-xl text-center text-white/60 font-medium font-monsterrat mb-12"
+          >
+            Lavale mang lại sự hưng phấn tự tại, niềm vui, sự thân mật và sảng
+            khoái nhưng không với cái giá của đau đầu, mệt mỏi, khát nước của
+            ngày mai tỉnh dậy.
+          </span>
+        </div>
+        <div
+          class="w-full aspect-[375/72] bottom-[-1px] left-0 bg-center bg-no-repeat bg-cover bg-spliter scale-x-[-1] rotate-180 border-0 p-0 md:aspect-[834/72] lg:aspect-[1440/72]"
+        ></div>
+      </div>
+
+      <div class="w-full bg-transparent z-9">
+        <div
+          class="flex flex-col w-[88.89%] mx-auto items-center align-center justify-center p-0 my-24 z-10 md:px-[9%] md:py-[7%] md:my-0"
+        >
+          <img src="./img/advice.png" class="w-[81%] mb-4 md:w-[32%]" />
+          <h1
+            class="w-full text-center text-5xl text-white font-display mb-4 capitalize"
+          >
+            Tư Vấn
+          </h1>
+          <span
+            class="block w-full text-xl text-center text-white/60 font-medium font-monsterrat mb-12"
+          >
+            Cùng Lavale tìm hiểu thêm về các tác dụng của rượu và rượu thuốc
+            truyền thống
+          </span>
+          <div
+            class="flex flex-col w-full justify-between items-center align-center space-y-4 mb-[56px]"
+          >
+            <div
+              class="grid grid-cols-1 grid-rows-2 gap-3 w-full justify-between items-center align-center z-10 md:grid-cols-2 md:grid-rows-1"
+            >
+              <div
+                class="relative flex flex-col justify-center aspect-[523/192] bg-lavalelight/30 rounded-md"
+              >
+                <img
+                  src="./img/spliter.png"
+                  class="w-full aspect-[523/16] absolute scale-x-[-1] top-[-1px] left-0"
+                />
+                <img
+                  src="./img/spliter-vertical.png"
+                  class="h-full aspect-[16/192] absolute scale-y-[-1] top-0 left-[-1px]"
+                />
+                <img
+                  src="./img/spliter-vertical.png"
+                  class="h-full aspect-[16/192] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+                />
+                <img
+                  src="./img/spliter.png"
+                  class="w-full aspect-[523/16] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+                />
+                <span
+                  class="block text-left font-medium font-monsterrat text-lg text-white px-12 mb-8 pt-12 lg:pt-0"
+                >
+                  Bài thuốc ngâm rượu chữa yếu sinh lý hiệu quả
+                </span>
+                <span
+                  class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white px-12 pb-12 lg:pb-0"
+                  data-button-link="/blogs.html"
+                >
+                  Xem chi tiết
+                  <svg
+                    class="h-6 w-6 text-white ml-4"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <line x1="13" y1="18" x2="19" y2="12" />
+                    <line x1="13" y1="6" x2="19" y2="12" />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="relative flex flex-col justify-center aspect-[523/192] bg-lavalelight/30 rounded-md"
+              >
+                <img
+                  src="./img/spliter.png"
+                  class="w-full aspect-[523/16] absolute scale-x-[-1] top-[-1px] left-0"
+                />
+                <img
+                  src="./img/spliter-vertical.png"
+                  class="h-full aspect-[16/192] absolute scale-y-[-1] top-0 left-[-1px]"
+                />
+                <img
+                  src="./img/spliter-vertical.png"
+                  class="h-full aspect-[16/192] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+                />
+                <img
+                  src="./img/spliter.png"
+                  class="w-full aspect-[523/16] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+                />
+                <span
+                  class="block text-left font-medium font-monsterrat text-lg text-white px-12 mb-8 pt-12 lg:pt-0"
+                >
+                  Cách ngâm rượu gừng nghệ hạ thổ
+                </span>
+                <span
+                  class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white px-12 pb-12 lg:pb-0"
+                  data-button-link="/blogs.html"
+                >
+                  Xem chi tiết
+                  <svg
+                    class="h-6 w-6 text-white ml-4"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <line x1="13" y1="18" x2="19" y2="12" />
+                    <line x1="13" y1="6" x2="19" y2="12" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-1 grid-rows-2 gap-3 w-full justify-between items-center align-center z-10 md:grid-cols-2 md:grid-rows-1"
+            >
+              <div
+                class="relative flex flex-col justify-center aspect-[523/192] bg-lavalelight/30 rounded-md"
+              >
+                <img
+                  src="./img/spliter.png"
+                  class="w-full aspect-[523/16] absolute scale-x-[-1] top-[-1px] left-0"
+                />
+                <img
+                  src="./img/spliter-vertical.png"
+                  class="h-full aspect-[16/192] absolute scale-y-[-1] top-0 left-[-1px]"
+                />
+                <img
+                  src="./img/spliter-vertical.png"
+                  class="h-full aspect-[16/192] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+                />
+                <img
+                  src="./img/spliter.png"
+                  class="w-full aspect-[523/16] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+                />
+                <span
+                  class="block text-left font-medium font-monsterrat text-lg text-white px-12 mb-8 pt-12 lg:pt-0"
+                >
+                  Công dụng rượu cau chữa viêm lợi
+                </span>
+                <span
+                  class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white px-12 pb-12 lg:pb-0"
+                  data-button-link="/blogs.html"
+                >
+                  Xem chi tiết
+                  <svg
+                    class="h-6 w-6 text-white ml-4"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <line x1="13" y1="18" x2="19" y2="12" />
+                    <line x1="13" y1="6" x2="19" y2="12" />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="relative flex flex-col justify-center aspect-[523/192] bg-lavalelight/30 rounded-md"
+              >
+                <img
+                  src="./img/spliter.png"
+                  class="w-full aspect-[523/16] absolute scale-x-[-1] top-[-1px] left-0"
+                />
+                <img
+                  src="./img/spliter-vertical.png"
+                  class="h-full aspect-[16/192] absolute scale-y-[-1] top-0 left-[-1px]"
+                />
+                <img
+                  src="./img/spliter-vertical.png"
+                  class="h-full aspect-[16/192] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+                />
+                <img
+                  src="./img/spliter.png"
+                  class="w-full aspect-[523/16] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+                />
+                <span
+                  class="block text-left font-medium font-monsterrat text-lg text-white px-12 mb-8 pt-12 lg:pt-0"
+                >
+                  5 Loại rượu hoa quả tốt nhất hiện nay
+                </span>
+                <span
+                  class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white px-12 pb-12 lg:pb-0"
+                  data-button-link="/blogs.html"
+                >
+                  Xem chi tiết
+                  <svg
+                    class="h-6 w-6 text-white ml-4"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <line x1="13" y1="18" x2="19" y2="12" />
+                    <line x1="13" y1="6" x2="19" y2="12" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="w-full flex flex-row justify-center items-center align-center" id="pagination">
+                    <span class="
+                        block uppercase mr-[16px] cursor-pointer
+                        font-monsterrat font-semibold text-[16px] leading-[24px] text-white/30
+                    " data-pagination-prev>Quay lại</span>
+                    <div class="flex flex-row justify-between gap-[8px]" data-pagination-pages>
+                        <div class="
+                            w-[55px] aspect-[1/1] cursor-pointer
+                            border-[2px] border-white rounded-[8px] 
+                            flex justify-center align-center items-center
+                            font-monsterrat font-semibold text-[18px] leading-[24px] text-white
+                        ">
+                            1
+                        </div>
+                        <div class="
+                            w-[55px] aspect-[1/1] cursor-pointer
+                            border-0 border-white rounded-[8px]
+                            flex justify-center align-center items-center
+                            font-monsterrat font-semibold text-[18px] leading-[24px] text-white
+                        ">
+                            2
+                        </div>
+                        <div class="
+                            w-[55px] aspect-[1/1] cursor-pointer
+                            flex justify-center align-center items-center
+                            font-monsterrat font-semibold text-[18px] leading-[24px] text-white
+                        ">
+                            3
+                        </div>
+                        <div class="
+                            w-[55px] aspect-[1/1] cursor-pointer
+                            flex justify-center align-center items-center
+                            font-monsterrat font-semibold text-[18px] leading-[24px] text-white
+                        ">
+                            4
+                        </div>
+                    </div>
+                    <span class="
+                        block uppercase ml-[16px] cursor-pointer
+                        font-monsterrat font-semibold text-[16px] leading-[24px] text-white
+                    " data-pagination-next>Tiếp theo</span>
+                </div> -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="relative flex flex-col bg-lavaledark w-full z-20">
+      <div
+        class="absolute w-full aspect-[375/72] top-[-1px] left-0 bg-center bg-no-repeat bg-cover bg-spliter scale-x-[-1] border-0 p-0 md:aspect-[834/72] lg:aspect-[1440/72]"
+      ></div>
+      <div
+        class="flex flex-col w-full mx-auto items-center align-center justify-center md:w-[88.89%] py-14"
+      >
+        <div
+          class="flex flex-col gap-6 relative w-full justify-center items-center md:flex-row mt-16 md:mt-0"
+        >
+          <img src="./img/logo.png" class="w-32 md:w-56" />
+          <button
+            class="flex items-center gap-2 md:absolute left-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%] border-none"
+          >
+            <img src="./img/global-icon.svg" />
+            <span class="text-white font-monsterrat">Tiếng Anh</span>
+          </button>
+          <div
+            class="flex items-center gap-4 md:absolute right-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%]"
+          >
+            <a
+              href="https://www.facebook.com/LavaleSpirit?gidzl=BPcl82rpLbiYWAeXAMXGN2Q0hYGnRbTRC8Ug8smxNbXZqV4dOpLP3cAEyd5jCGzTOThxSJ8vtSrD9dLGLG"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/facebook.svg" />
+            </a>
+            <a
+              href="https://www.instagram.com/lavale_distillery/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/instagram.svg" />
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 md:gap-0 h-fit">
+          <div
+            class="text-center font-monsterrat text-white px-8 cursor-pointer hover:text-active"
+            data-button-link="/"
+          >
+            Trang chủ
+          </div>
+          <div
+            class="text-center font-monsterrat text-white px-8 cursor-pointer hover:text-active"
+            data-button-link="/introduction.html"
+          >
+            Giới thiệu
+          </div>
+          <div
+            class="text-center font-monsterrat text-white px-8 cursor-pointer hover:text-active"
+            data-button-link="/products.html"
+          >
+            Sản phẩm
+          </div>
+          <div
+            class="text-center font-monsterrat text-white px-8 cursor-pointer hover:text-active"
+            data-button-link="/"
+          >
+            Thư viện ảnh
+          </div>
+          <div
+            class="text-center font-monsterrat text-white px-8 cursor-pointer hover:text-active"
+            data-button-link="/"
+          >
+            Tin tức
+          </div>
+          <div
+            class="text-center font-monsterrat text-white px-8 cursor-pointer hover:text-active"
+            data-button-link="/contact.html"
+          >
+            Liên hệ
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-row w-[88.89%] mx-auto align-center border-t-[1px] border-[#feefc0] pt-4 pb-12 text-[#e1f5fa]"
+      >
+        <span
+          class="w-full uppercase font-monsterrat leading-6 text-xs font-medium"
+          >©2024 Lavale Distillery
+          <br />
+          Hãy sử dụng rượu bia có trách nhiệm
+          <br />
+          Chỉ chia sẻ sản phẩm này với người trên 18 tuổi
+        </span>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    MenuResponsive.init();
+    ButtonLink.init();
+    new Pagination("pagination", 5, 10, 3);
+  </script>
+</html>
