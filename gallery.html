@@ -57,17 +57,40 @@
           transform: translateX(100px);
         }
       }
-      .slideshow {
-        overflow: hidden;
-        white-space: nowrap;
-        animation: slide 12s linear infinite;
+
+      .slide-container:hover .slideshow1,
+      .slide-container:hover .slideshow2 {
+        animation-play-state: paused;
+      }
+      .slideshow2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        animation: slide 20s linear infinite;
       }
 
-      .slideshow img {
-        display: inline-block;
-        width: 300px; /* Kích thước ảnh */
-        border-radius: 4px; /* Bo tròn góc */
-        margin-right: 10px;
+      .slideshow1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        animation: slide2 20s linear infinite;
+      }
+
+      .slideshow1 img,
+      .slideshow2 img {
+        object-fit: cover;
+        cursor: pointer;
+        flex: 0.2275;
+        width: 19.25rem;
+        min-width: 15rem;
+        height: 100%;
+        border-radius: 4px;
+        transition: 0.3s;
+      }
+
+      .slideshow1 img:hover,
+      .slideshow2 img:hover {
+        scale: 1.05;
       }
 
       @keyframes slide {
@@ -79,9 +102,25 @@
         }
       }
 
+      @keyframes slide2 {
+        0% {
+          transform: translateX(0%);
+        }
+        50% {
+          transform: translateX(-100%);
+        }
+        50.0001% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
       .popup {
         display: none;
         position: fixed;
+        z-index: 1000;
         top: 0;
         left: 0;
         width: 100%;
@@ -133,7 +172,7 @@
         >
           <div class="w-[40%] flex items-end justify-end">
             <a
-              class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-active border-b-[3px] hover:cursor-pointer border-active"
+              class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
               href="/"
             >
               Trang Chủ
@@ -155,7 +194,7 @@
           <div class="w-[40%] flex">
             <a
               href="/"
-              class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+              class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-active border-b-[3px] hover:cursor-pointer border-active"
             >
               Thư viện ảnh
             </a>
@@ -220,7 +259,7 @@
           >
             <a
               href="/"
-              class="block h-6 leading-normal text-[16px] font-semibold uppercase text-active border-b-[3px] hover:cursor-pointer border-active text-center mb-[32px]"
+              class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Trang Chủ
             </a>
@@ -238,7 +277,7 @@
             </a>
             <a
               href="/"
-              class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+              class="block h-6 leading-normal text-[16px] font-semibold uppercase text-active border-b-[3px] hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Thư viện ảnh
             </a>
@@ -308,12 +347,55 @@
           cả nước</span
         >
       </div>
-      <div class="slideshow">
-        <img
-          src="./img/home-news1.png"
-          alt="Slideshow Image"
-          onclick="showPopup(`./img/home-news1.png`)"
-        />
+      <div class="slide-container w-full relative mt-16 mb-32 h-[20rem]">
+        <div
+          class="slideshow1 w-[380%] md:w-[180%] lg:w-full absolute top-0 bottom-0 left-0"
+        >
+          <img
+            src="./img/gallery1.png"
+            alt="Slideshow Image"
+            onclick="showPopup(`./img/gallery1.png`)"
+          />
+          <img
+            src="./img/gallery2.png"
+            alt="Slideshow Image"
+            onclick="showPopup(`./img/gallery2.png`)"
+          />
+          <img
+            src="./img/gallery3.png"
+            alt="Slideshow Image"
+            onclick="showPopup(`./img/gallery3.png`)"
+          />
+          <img
+            src="./img/gallery4.png"
+            alt="Slideshow Image"
+            onclick="showPopup(`./img/gallery4.png`)"
+          />
+        </div>
+        <div
+          class="slideshow2 w-[380%] md:w-[180%] lg:w-full absolute top-0 bottom-0 left-0"
+        >
+          <img
+            src="./img/gallery1.png"
+            alt="Slideshow Image"
+            onclick="showPopup(`./img/gallery1.png`)"
+          />
+          <img
+            src="./img/gallery2.png"
+            alt="Slideshow Image"
+            onclick="showPopup(`./img/gallery2.png`)"
+          />
+          <img
+            src="./img/gallery3.png"
+            alt="Slideshow Image"
+            onclick="showPopup(`./img/gallery3.png`)"
+          />
+          <img
+            src="./img/gallery4.png"
+            alt="Slideshow Image"
+            onclick="showPopup(`./img/gallery4.png`)"
+          />
+        </div>
       </div>
 
       <div class="popup" id="popup" onclick="hidePopup()">
