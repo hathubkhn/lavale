@@ -80,6 +80,9 @@ let blogTitle6 = document.getElementById("blogTitle6");
 let details1 = document.getElementById("details1");
 let details2 = document.getElementById("details2");
 let details3 = document.getElementById("details3");
+let details4 = document.getElementById("details4");
+let details5 = document.getElementById("details5");
+let details6 = document.getElementById("details6");
 
 languageSelector.addEventListener("change", (e) => setLanguage(e.target.value));
 
@@ -120,6 +123,9 @@ const setLanguage = (language) => {
     details1.innerText = translations.vietnamese.details;
     details2.innerText = translations.vietnamese.details;
     details3.innerText = translations.vietnamese.details;
+    details4.innerText = translations.vietnamese.details;
+    details5.innerText = translations.vietnamese.details;
+    details6.innerText = translations.vietnamese.details;
   } else if (language === "English") {
     linkHome1.innerText = translations.english.linkHome;
     linkHome2.innerText = translations.english.linkHome;
@@ -154,6 +160,9 @@ const setLanguage = (language) => {
     details1.innerText = translations.english.details;
     details2.innerText = translations.english.details;
     details3.innerText = translations.english.details;
+    details4.innerText = translations.english.details;
+    details5.innerText = translations.english.details;
+    details6.innerText = translations.english.details;
   }
 };
 

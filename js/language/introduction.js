@@ -15,10 +15,10 @@ let translations = {
       "Our founders are a group of shareholders from many different fields of life but share a common passion. Preserving tradition and aspiring for more, Lavale wishes to elevate Vietnamese wine to reach out to all five continents, creating pride in the national spirit for the drops of wine distilled on the S-shaped land of a thousand years of civilization.",
     introductionTitle1: "Trees",
     introductionDescription1:
-      "Là biểu tượng của táo hóa đại diện cho quả cây trĩu mọng, sản vật tinh hoa của đất trời Việt Nam.",
+      "The apple is a symbol of the ripe fruit, the quintessential product of Vietnam's land and sky.",
     introductionTitle2: "Mountains",
     introductionDescription2:
-      "Núi là biểu tượng mạnh mẽ cho sự tự tin, phiêu lưu và chinh phục. Chúng cũng đại diện cho thiên nhiên và sự mở rộng của không gian ngoài trời cũng như tinh thần sảng khoái khi thưởng thức chất rượu Lavale",
+      "Mountains are powerful symbols of confidence, adventure and conquest. They also represent nature and the openness of the outdoors, as well as the refreshing spirit of enjoying Lavale wine",
     introductionTitle3: "Rice Grain - Real Pearl",
     introductionDescription3:
       "Rice grains are an image closely associated with Vietnamese rice culture, and are also the core essence when distilling alcohol.",
