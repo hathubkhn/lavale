@@ -26,6 +26,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js" type="module"></script>
+    <script src="./js/language/blogs.js" type="module"></script>
 
     <style>
       .fade-in-right {
@@ -75,18 +76,21 @@
         >
           <div class="w-[40%] flex items-end justify-end">
             <a
+              id="linkHome1"
               class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
               href="/"
             >
               Trang Chủ
             </a>
             <a
+              id="linkIntroduction1"
               href="/introduction.html"
               class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
               Giới thiệu
             </a>
             <a
+              id="linkProducts1"
               href="/products.html"
               class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
@@ -96,18 +100,21 @@
           <img src="./img//logo.png" class="h-full" />
           <div class="w-[40%] flex">
             <a
+              id="linkGallery1"
               href="/gallery.html"
               class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
               Thư viện ảnh
             </a>
             <a
+              id="linkBlogs1"
               href="/blogs.html"
               class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-active border-b-[3px] hover:cursor-pointer border-active"
             >
               Tin tức
             </a>
             <a
+              id="linkContact1"
               href="/contact.html"
               class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
@@ -157,36 +164,42 @@
             class="w-full flex flex-col justify-center align-center items-center pt-[32px]"
           >
             <a
+              id="linkHome2"
               href="/"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Trang Chủ
             </a>
             <a
+              id="linkIntroduction2"
               href="/introduction.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Giới thiệu
             </a>
             <a
+              id="linkProducts2"
               href="/products.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Sản phẩm
             </a>
             <a
+              id="linkGallery2"
               href="/gallery.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Thư viện ảnh
             </a>
             <a
+              id="linkBlogs2"
               href="/blogs.html"
               class="block h-6 leading-normal text-[16px] font-semibold uppercase text-active border-b-[3px] hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Tin tức
             </a>
             <a
+              id="linkContact2"
               href="/contact.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
@@ -199,6 +212,7 @@
         >
           <div class="flex flex-row mb-[4px]">
             <span
+              id="phone"
               class="text-[0.9375rem] leading-normal mr-[10px] font-monsterrat text-white/60"
               >Điện thoại</span
             >
@@ -233,14 +247,16 @@
           class="flex flex-col w-full aspect-[375/280] px-4 m-auto align-center justify-center items-center md:aspect-[834/184] lg:aspect-[1280/320] lg:w-[88.89%]"
         >
           <h1
+            id="news"
             class="w-full text-center text-5xl text-white font-display my-12 capitalize"
           >
             Tin tức
           </h1>
           <span
+            id="latestNews"
             class="block w-full text-xl text-center text-white/80 leading-8 font-monsterrat"
           >
-            Các tin tức mới nhất và kiến tthức về rượu của Lavale
+            Các tin tức mới nhất và kiến thức về rượu của Lavale
           </span>
           <div
             class="w-full lg:w-[88.89%] flex flex-col justify-between items-center align-center space-y-4 py-12"
@@ -269,15 +285,16 @@
                   <img src="./img/home-news1.png" class="w-full rounded-md" />
                 </div>
                 <span
+                  id="blogTitle1"
                   class="block text-left font-medium font-monsterrat text-lg text-white"
                 >
-                  Vì sao gọi là quốc tửu? <br \ />
+                  Vì sao gọi là quốc tửu?
                 </span>
                 <span
                   class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
                   data-button-link="/blog-1.html"
                 >
-                  Xem chi tiết
+                  <span id="details1"> Xem chi tiết </span>
                   <svg
                     class="h-6 w-6 ml-4"
                     width="24"
@@ -317,16 +334,17 @@
                   <img src="./img/home-news2.png" class="w-full rounded-md" />
                 </div>
                 <span
+                  id="blogTitle2"
                   class="block text-left font-medium font-monsterrat text-lg text-white"
                 >
-                  Một lần nữa DJ Tilo & MC QuanK quay lại <br \ />
-                  thắp sáng sân khấu cùng Lavale
+                  Một lần nữa DJ Tilo & MC QuanK quay lại thắp sáng sân khấu
+                  cùng Lavale
                 </span>
                 <span
                   class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
                   data-button-link="/blog-1.html"
                 >
-                  Xem chi tiết
+                  <span id="details2"> Xem chi tiết </span>
                   <svg
                     class="h-6 w-6 ml-4"
                     width="24"
@@ -370,16 +388,16 @@
                   <img src="./img/home-news3.png" class="w-full rounded-md" />
                 </div>
                 <span
+                  id="blogTitle3"
                   class="block text-left font-medium font-monsterrat text-lg text-white"
                 >
-                  Thần tượng Hà Nhi và đêm diễn đỉnh cao cùng <br \ />
-                  tại Tòng Livehouse
+                  Thần tượng Hà Nhi và đêm diễn đỉnh cao cùng tại Tòng Livehouse
                 </span>
                 <span
                   class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
                   data-button-link="/blog-1.html"
                 >
-                  Xem chi tiết
+                  <span id="details3">Xem chi tiết</span>
                   <svg
                     class="h-6 w-6 ml-4"
                     width="24"
@@ -419,15 +437,16 @@
                   <img src="./img/home-news4.png" class="w-full rounded-md" />
                 </div>
                 <span
+                  id="blogTitle4"
                   class="block text-left font-medium font-monsterrat text-lg text-white"
                 >
-                  Tham gia các sự kiện văn hóa nổi bật cùng Lavale <br \ />
+                  Tham gia các sự kiện văn hóa nổi bật cùng Lavale
                 </span>
                 <span
                   class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
                   data-button-link="/blog-1.html"
                 >
-                  Xem chi tiết
+                  <span id="details4">Xem chi tiết</span>
                   <svg
                     class="h-6 w-6 ml-4"
                     width="24"
@@ -471,6 +490,7 @@
                   <img src="./img/homepage.png" class="w-full rounded-md" />
                 </div>
                 <span
+                  id="blogTitle5"
                   class="block text-left font-medium font-monsterrat text-lg text-white"
                 >
                   Tham gia các sự kiện văn hóa nổi bật cùng Lavale
@@ -479,7 +499,7 @@
                   class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
                   data-button-link="/blog-1.html"
                 >
-                  Xem chi tiết
+                  <span id="details5">Xem chi tiết</span>
                   <svg
                     class="h-6 w-6 ml-4"
                     width="24"
@@ -519,6 +539,7 @@
                   <img src="./img/gallery1.png" class="w-full rounded-md" />
                 </div>
                 <span
+                  id="blogTitle6"
                   class="block text-left font-medium font-monsterrat text-lg text-white"
                 >
                   Một lần nữa DJ Tilo & MC QuanK lại thắp sáng sân khấu cùng
@@ -528,7 +549,7 @@
                   class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
                   data-button-link="/blog-1.html"
                 >
-                  Xem chi tiết
+                  <span id="details6">Xem chi tiết</span>
                   <svg
                     class="h-6 w-6 ml-4"
                     width="24"
@@ -601,12 +622,17 @@
           class="flex flex-col gap-6 relative w-full justify-center items-center md:flex-row mt-16 md:mt-0"
         >
           <img src="./img/logo.png" class="w-32 md:w-56" />
-          <button
-            class="flex items-center gap-2 md:absolute left-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%] border-none"
+          <div
+            class="flex items-center md:absolute left-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%] border-none"
           >
             <img src="./img/global-icon.svg" />
-            <span class="text-white font-monsterrat">Tiếng Anh</span>
-          </button>
+            <select
+              class="language-selector text-white font-monsterrat bg-transparent border-none outline-none py-2 pl-2"
+            >
+              <option class="text-black">Vietnamese</option>
+              <option class="text-black">English</option>
+            </select>
+          </div>
           <div
             class="flex items-center gap-4 md:absolute right-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%]"
           >
@@ -630,36 +656,42 @@
           class="flex flex-col justify-between md:w-full md:flex-row gap-6 md:gap-0 lg:justify-center h-fit"
         >
           <div
+            id="linkHome3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/"
           >
             Trang chủ
           </div>
           <div
+            id="linkIntroduction3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/introduction.html"
           >
             Giới thiệu
           </div>
           <div
+            id="linkProducts3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/products.html"
           >
             Sản phẩm
           </div>
           <div
+            id="linkGallery3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/"
           >
             Thư viện ảnh
           </div>
           <div
+            id="linkBlogs3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/blogs.html"
           >
             Tin tức
           </div>
           <div
+            id="linkContact3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/contact.html"
           >
@@ -672,11 +704,13 @@
       >
         <span
           class="w-full capitalize font-monsterrat leading-6 text-xs font-medium"
-          >©2024 Lavale Distillery
+          ><span>©2024 Lavale Distillery</span>
           <br />
-          Hãy sử dụng rượu bia có trách nhiệm
+          <span id="footer1">Hãy sử dụng rượu bia có trách nhiệm</span>
           <br />
-          Chỉ chia sẻ sản phẩm này với người trên 18 tuổi
+          <span id="footer2"
+            >Chỉ chia sẻ sản phẩm này với người trên 18 tuổi</span
+          >
         </span>
       </div>
     </footer>

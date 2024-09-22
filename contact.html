@@ -26,6 +26,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js" type="module"></script>
+    <script src="./js/language/contact.js" type="module"></script>
 
     <style>
       .fade-in-right {
@@ -75,18 +76,21 @@
         >
           <div class="w-[40%] flex items-end justify-end">
             <a
+              id="linkHome1"
               class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
               href="/"
             >
               Trang Chủ
             </a>
             <a
+              id="linkIntroduction1"
               href="/introduction.html"
               class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
               Giới thiệu
             </a>
             <a
+              id="linkProducts1"
               href="/products.html"
               class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
@@ -96,18 +100,21 @@
           <img src="./img//logo.png" class="h-full" />
           <div class="w-[40%] flex">
             <a
+              id="linkGallery1"
               href="/gallery.html"
               class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
               Thư viện ảnh
             </a>
             <a
+              id="linkBlogs1"
               href="/blogs.html"
               class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
               Tin tức
             </a>
             <a
+              id="linkContact1"
               href="/contact.html"
               class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-active border-b-[3px] hover:cursor-pointer border-active"
             >
@@ -134,6 +141,7 @@
           class="flex flex-col w-full px-4 m-auto align-center justify-center items-center lg:w-[88.89%]"
         >
           <h1
+            id="contactTitle"
             class="w-full text-center text-6xl text-white font-bold font-display my-12 capitalize"
           >
             Liên hệ
@@ -141,9 +149,14 @@
           <span
             class="block w-full text-xl text-center text-white leading-8 font-monsterrat font-medium"
           >
-            Quý khách vui lòng liên hệ trực tiếp qua điện thoại hoặc để lại lời
-            nhắn.<br />
-            Nhân viên chăm sóc khách hàng sẽ gọi điện tư vấn ngay cho quý khách.
+            <span id="contactDescription1"
+              >Quý khách vui lòng liên hệ trực tiếp qua điện thoại hoặc để lại
+              lời nhắn.</span
+            ><br />
+            <span id="contactDescription2"
+              >Nhân viên chăm sóc khách hàng sẽ gọi điện tư vấn ngay cho quý
+              khách.</span
+            >
           </span>
           <div
             class="w-full bg-transparent z-9 flex justify-center align-center items-center"
@@ -153,14 +166,18 @@
             >
               <div class="flex-1">
                 <h1
+                  id="contactPhone"
                   class="capitalize font-display text-4xl leading-relaxed text-white mb-[24px] lg:text-[48px]"
                 >
                   Điện Thoại
                 </h1>
                 <span
                   class="block font-monsterrat font-medium text-[0.9375rem] leading-normal text-white mb-[8px]"
-                  >Tư vấn và đặt hàng <br />
-                  Thứ 2 đến thứ 7, 8:00 đến 17:00</span
+                  ><span id="contactPhoneDescription1">Tư vấn và đặt hàng</span
+                  ><br />
+                  <span id="contactPhoneDescription2"
+                    >Thứ 2 đến thứ 7, 8:00 đến 17:00</span
+                  ></span
                 >
                 <span
                   class="block font-monsterrat text-[0.9375rem] leading-normal text-[#feefc0]"
@@ -174,6 +191,7 @@
                   Email
                 </h1>
                 <span
+                  id="contactEmailDescription"
                   class="block font-monsterrat font-medium text-[0.9375rem] leading-normal text-white mb-[8px]"
                   >Hỗ trợ, tư vấn và đặt hàng online</span
                 >
@@ -184,26 +202,30 @@
               </div>
               <div class="flex-1">
                 <h1
+                  id="contactAddress"
                   class="capitalize font-display text-4xl leading-relaxed text-white mb-[24px] lg:text-[48px]"
                 >
                   Địa chỉ
                 </h1>
                 <span
+                  id="contactAddress1"
                   class="block font-monsterrat font-medium text-[0.9375rem] leading-normal text-white mb-[8px]"
                   >Khu vực miền Bắc</span
                 >
                 <span
+                  id="contactAddressDescription1"
                   class="block font-monsterrat text-[0.9375rem] leading-normal text-[#feefc0] mb-[24px]"
                   >18 ngõ 35 Cát Linh, Đống Đa, Hà Nội</span
                 >
                 <span
+                  id="contactAddress2"
                   class="block font-monsterrat font-medium text-[0.9375rem] leading-normal text-white mb-[8px]"
                   >Khu vực miền Nam</span
                 >
                 <span
+                  id="contactAddressDescription2"
                   class="block font-monsterrat text-[0.9375rem] leading-normal text-[#feefc0]"
-                  >16/11 đường số 18, phường 8, <br />
-                  Gò Vấp, Hồ Chí Minh</span
+                  >16/11 đường số 18, phường 8, Gò Vấp, Hồ Chí Minh</span
                 >
               </div>
             </div>
@@ -240,36 +262,42 @@
             class="w-full flex flex-col justify-center align-center items-center pt-[32px]"
           >
             <a
+              id="linkHome2"
               href="/"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Trang Chủ
             </a>
             <a
+              id="linkIntroduction2"
               href="/introduction.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Giới thiệu
             </a>
             <a
+              id="linkProducts2"
               href="/products.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Sản phẩm
             </a>
             <a
+              id="linkGallery2"
               href="/gallery.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Thư viện ảnh
             </a>
             <a
+              id="linkBlogs2"
               href="/blogs.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Tin tức
             </a>
             <a
+              id="linkContact2"
               href="/contact.html"
               class="block h-6 leading-normal text-[16px] font-semibold uppercase text-active border-b-[3px] hover:cursor-pointer border-active text-center mb-[32px]"
             >
@@ -282,6 +310,7 @@
         >
           <div class="flex flex-row mb-[4px]">
             <span
+              id="phone"
               class="text-[0.9375rem] leading-normal mr-[10px] font-monsterrat text-white/60"
               >Điện thoại</span
             >
@@ -319,6 +348,7 @@
         >
           <div class="flex flex-col align-center w-full mx-auto lg:w-[66%]">
             <h1
+              id="contactFormTitle"
               class="w-full text-center text-4xl text-white font-display mb-[24px] capitalize lg:font-semibold lg:text-5xl"
             >
               Để lại lời nhắn
@@ -329,20 +359,24 @@
               >
                 <div class="flex-1 flex flex-col w-full">
                   <span
+                    id="contactForm1"
                     class="block mb-[8px] font-monsterrat font-medium text-[14px] leading-[20px] text-white"
                     >Địa chỉ Email</span
                   >
                   <input
+                    id="contactFormInput1"
                     placeholder="Thông tin liên lạc của quý khách"
                     class="w-full bg-lavale/10 text-white border-[3px] border-white/30 w-fit py-3 px-9 rounded-md leading-8 font-monsterrat font-medium hover:bg-white/10 hover:border-[#feefc0] focus:bg-white/10 focus:border-[#feefc0] text-lg placeholder-white/60"
                   />
                 </div>
                 <div class="flex-1 flex flex-col w-full">
                   <span
+                    id="contactForm2"
                     class="block mb-[8px] font-monsterrat font-medium text-[14px] leading-[20px] text-white"
                     >Họ và Tên</span
                   >
                   <input
+                    id="contactFormInput2"
                     placeholder="Danh xưng của quý khách"
                     class="w-full bg-lavale/10 text-white border-[3px] border-white/30 w-fit py-3 px-9 rounded-md leading-8 font-monsterrat font-medium hover:bg-white/10 hover:border-[#feefc0] focus:bg-white/10 focus:border-[#feefc0] text-lg placeholder-white/60"
                   />
@@ -350,26 +384,31 @@
               </div>
               <div class="w-full mb-[16px]">
                 <span
+                  id="contactForm3"
                   class="block mb-[8px] font-monsterrat font-medium text-[14px] leading-[20px] text-white"
                   >Tiêu đề</span
                 >
                 <input
+                  id="contactFormInput3"
                   placeholder="Vấn đề cần liên hệ"
                   class="w-full bg-lavale/10 text-white border-[3px] border-white/30 w-fit py-3 px-9 rounded-md leading-8 font-monsterrat font-medium hover:bg-white/10 hover:border-[#feefc0] focus:bg-white/10 focus:border-[#feefc0] text-lg placeholder-white/60"
                 />
               </div>
               <div class="w-full">
                 <span
+                  id="contactForm4"
                   class="block mb-[8px] font-monsterrat font-medium text-[14px] leading-[20px] text-white"
                   >Tiêu đề</span
                 >
                 <textarea
+                  id="contactFormInput4"
                   placeholder="Vấn đề cần liên hệ"
                   class="w-full bg-lavale/10 text-white border-[3px] border-white/30 w-fit py-3 px-9 rounded-md leading-8 font-monsterrat font-medium hover:bg-white/10 hover:border-[#feefc0] focus:bg-white/10 focus:border-[#feefc0] text-lg placeholder-white/60"
                 ></textarea>
               </div>
             </div>
             <button
+              id="contactFormButton"
               class="w-full transparent text-white border-[3px] w-fit py-3 px-9 uppercase rounded-md leading-8 font-monsterrat font-extrabold hover:bg-white/50 text-lg"
             >
               Gửi lời nhắn
@@ -386,6 +425,7 @@
           class="flex flex-col w-[91.5%] mx-auto mt-20 items-center align-center justify-center z-10 md:w-[92.3%] lg:w-[88.89%] lg:aspect-[1280/480]"
         >
           <h1
+            id="contactFollow"
             class="w-full text-center text-4xl text-white font-display mb-[32px] capitalize lg:text-[48px]"
           >
             Theo dõi Lavale
@@ -533,18 +573,26 @@
 
     <footer class="relative flex flex-col bg-lavaledark w-full z-20">
       <div
+        class="absolute w-full aspect-[375/72] top-[-1px] left-0 bg-center bg-no-repeat bg-cover bg-spliter scale-x-[-1] border-0 p-0 md:aspect-[834/72] lg:aspect-[1440/72]"
+      ></div>
+      <div
         class="flex flex-col w-full mx-auto items-center align-center justify-center md:w-[88.89%] py-14"
       >
         <div
           class="flex flex-col gap-6 relative w-full justify-center items-center md:flex-row mt-16 md:mt-0"
         >
           <img src="./img/logo.png" class="w-32 md:w-56" />
-          <button
-            class="flex items-center gap-2 md:absolute left-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%] border-none"
+          <div
+            class="flex items-center md:absolute left-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%] border-none"
           >
             <img src="./img/global-icon.svg" />
-            <span class="text-white font-monsterrat">Tiếng Anh</span>
-          </button>
+            <select
+              class="language-selector text-white font-monsterrat bg-transparent border-none outline-none py-2 pl-2"
+            >
+              <option class="text-black">Vietnamese</option>
+              <option class="text-black">English</option>
+            </select>
+          </div>
           <div
             class="flex items-center gap-4 md:absolute right-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%]"
           >
@@ -568,36 +616,42 @@
           class="flex flex-col justify-between md:w-full md:flex-row gap-6 md:gap-0 lg:justify-center h-fit"
         >
           <div
+            id="linkHome3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/"
           >
             Trang chủ
           </div>
           <div
+            id="linkIntroduction3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/introduction.html"
           >
             Giới thiệu
           </div>
           <div
+            id="linkProducts3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/products.html"
           >
             Sản phẩm
           </div>
           <div
+            id="linkGallery3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/"
           >
             Thư viện ảnh
           </div>
           <div
+            id="linkBlogs3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/blogs.html"
           >
             Tin tức
           </div>
           <div
+            id="linkContact3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/contact.html"
           >
@@ -610,11 +664,13 @@
       >
         <span
           class="w-full capitalize font-monsterrat leading-6 text-xs font-medium"
-          >©2024 Lavale Distillery
+          ><span>©2024 Lavale Distillery</span>
           <br />
-          Hãy sử dụng rượu bia có trách nhiệm
+          <span id="footer1">Hãy sử dụng rượu bia có trách nhiệm</span>
           <br />
-          Chỉ chia sẻ sản phẩm này với người trên 18 tuổi
+          <span id="footer2"
+            >Chỉ chia sẻ sản phẩm này với người trên 18 tuổi</span
+          >
         </span>
       </div>
     </footer>

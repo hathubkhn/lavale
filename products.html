@@ -26,6 +26,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js" type="module"></script>
+    <script src="./js/language/products.js" type="module"></script>
 
     <style>
       .fade-in-right {
@@ -75,18 +76,21 @@
         >
           <div class="w-[40%] flex items-end justify-end">
             <a
+              id="linkHome1"
               class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
               href="/"
             >
               Trang Chủ
             </a>
             <a
+              id="linkIntroduction1"
               href="/introduction.html"
               class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
               Giới thiệu
             </a>
             <a
+              id="linkProducts1"
               href="/products.html"
               class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-active border-b-[3px] hover:cursor-pointer border-active"
             >
@@ -96,18 +100,21 @@
           <img src="./img//logo.png" class="h-full" />
           <div class="w-[40%] flex">
             <a
+              id="linkGallery1"
               href="/gallery.html"
               class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
               Thư viện ảnh
             </a>
             <a
+              id="linkBlogs1"
               href="/blogs.html"
               class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
               Tin tức
             </a>
             <a
+              id="linkContact1"
               href="/contact.html"
               class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
             >
@@ -157,36 +164,42 @@
             class="w-full flex flex-col justify-center align-center items-center pt-[32px]"
           >
             <a
+              id="linkHome2"
               href="/"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Trang Chủ
             </a>
             <a
+              id="linkIntroduction2"
               href="/introduction.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Giới thiệu
             </a>
             <a
+              id="linkProducts2"
               href="/products.html"
               class="block h-6 leading-normal text-[16px] font-semibold uppercase text-active border-b-[3px] hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Sản phẩm
             </a>
             <a
+              id="linkGallery2"
               href="/gallery.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Thư viện ảnh
             </a>
             <a
+              id="linkBlogs2"
               href="/blogs.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
               Tin tức
             </a>
             <a
+              id="linkContact2"
               href="/contact.html"
               class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
             >
@@ -199,6 +212,7 @@
         >
           <div class="flex flex-row mb-[4px]">
             <span
+              id="phone"
               class="text-[0.9375rem] leading-normal mr-[10px] font-monsterrat text-white/60"
               >Điện thoại</span
             >
@@ -233,12 +247,14 @@
           class="flex flex-col w-full aspect-[375/280] px-4 m-auto align-center justify-center items-center md:aspect-[834/184] lg:aspect-[1280/320] lg:w-[88.89%]"
         >
           <h1
+            id="productsTitle"
             class="w-full text-center text-5xl lg:text-6xl text-white font-bold font-display my-12 capitalize"
           >
-            rượu lavale
+            Rượu lavale
           </h1>
           <span
-            class="block w-full text-xl text-center text-white leading-8 font-monsterrat font-medium max-w-[832px]"
+            id="productsDescription"
+            class="block w-full md:text-xl text-center text-white leading-8 font-monsterrat font-medium max-w-[832px]"
           >
             Mỗi chi tiết trên bao bì đều được chăm chút tỉ mỉ để tạo nên một sản
             phẩm không chỉ đẹp mắt mà còn truyền tải được thông điệp về sự tinh
@@ -255,15 +271,15 @@
               <div
                 class="relative w-full aspect-[343/320] flex items-center justify-center align-center rounded-md bg-no-repeat bg-center bg-cover md:aspect-[333/480]"
               >
-              <a href="/products-lavale-plum-spirit.html">
-                <img
-                  src="./img/ruouman.png"
+                <a
                   class="w-[65%] md:w-full"
-                  data-aos="fade-down"
-                />
-              </a>
+                  href="/products-lavale-plum-spirit.html"
+                >
+                  <img src="./img/ruouman.png" data-aos="fade-down" />
+                </a>
               </div>
               <span
+                id="lavalePlumSpirit"
                 class="block w-full text-2xl lg:text-4xl text-center text-white leading-10 font-monsterrat mb-4 font-medium capitalize"
               >
                 Lavale Mận
@@ -279,6 +295,7 @@
                 345,000 VND
               </span>
               <button
+                id="details1"
                 class="transparent text-white border-[3px] mt-6 w-full py-3 px-9 uppercase rounded-md leading-8 font-monsterrat font-medium hover:bg-white/50"
                 data-button-link="/products-lavale-plum-spirit.html"
               >
@@ -289,15 +306,15 @@
               <div
                 class="relative w-full aspect-[343/320] flex items-center justify-center align-center rounded-md bg-no-repeat bg-center bg-cover md:aspect-[333/480]"
               >
-              <a href="/products-lavale-apple-spirit.html">
-                <img
-                  src="./img/ruoutaomeo.png"
+                <a
                   class="w-[65%] md:w-full"
-                  data-aos="fade-down"
-                />
-              </a>
+                  href="/products-lavale-apple-spirit.html"
+                >
+                  <img src="./img/ruoutaomeo.png" data-aos="fade-down" />
+                </a>
               </div>
               <span
+                id="lavaleAppleSpirit"
                 class="block w-full text-2xl lg:text-4xl text-center text-white leading-10 font-monsterrat mb-4 font-medium capitalize"
               >
                 Lavale Táo Mèo
@@ -313,6 +330,7 @@
                 345,000 VND</span
               >
               <button
+                id="details2"
                 class="transparent text-white border-[3px] mt-6 w-full py-3 px-9 uppercase rounded-md leading-8 font-monsterrat font-medium hover:bg-white/50"
                 data-button-link="/products-lavale-apple-spirit.html"
               >
@@ -323,15 +341,15 @@
               <div
                 class="relative w-full aspect-[343/320] flex items-center justify-center align-center rounded-md bg-no-repeat bg-center bg-cover md:aspect-[333/480]"
               >
-              <a href="/products-lavale-lychee-spirit.html">
-                <img
-                  src="./img/ruouvai.png"
+                <a
                   class="w-[65%] md:w-full"
-                  data-aos="fade-down"
-                />
-              </a>
+                  href="/products-lavale-lychee-spirit.html"
+                >
+                  <img src="./img/ruouvai.png" data-aos="fade-down" />
+                </a>
               </div>
               <span
+                id="lavaleLycheeSpirit"
                 class="block w-full text-2xl lg:text-4xl text-center text-white leading-10 font-monsterrat mb-4 font-medium capitalize"
               >
                 Lavale Vải
@@ -347,6 +365,7 @@
                 345,000 VND
               </span>
               <button
+                id="details3"
                 class="transparent text-white border-[3px] mt-6 w-full py-3 px-9 uppercase rounded-md leading-8 font-monsterrat font-medium hover:bg-white/50"
                 data-button-link="/products-lavale-lychee-spirit.html"
               >
@@ -369,12 +388,17 @@
           class="flex flex-col gap-6 relative w-full justify-center items-center md:flex-row mt-16 md:mt-0"
         >
           <img src="./img/logo.png" class="w-32 md:w-56" />
-          <button
-            class="flex items-center gap-2 md:absolute left-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%] border-none"
+          <div
+            class="flex items-center md:absolute left-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%] border-none"
           >
             <img src="./img/global-icon.svg" />
-            <span class="text-white font-monsterrat">Tiếng Anh</span>
-          </button>
+            <select
+              class="language-selector text-white font-monsterrat bg-transparent border-none outline-none py-2 pl-2"
+            >
+              <option class="text-black">Vietnamese</option>
+              <option class="text-black">English</option>
+            </select>
+          </div>
           <div
             class="flex items-center gap-4 md:absolute right-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%]"
           >
@@ -398,36 +422,42 @@
           class="flex flex-col justify-between md:w-full md:flex-row gap-6 md:gap-0 lg:justify-center h-fit"
         >
           <div
+            id="linkHome3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/"
           >
             Trang chủ
           </div>
           <div
+            id="linkIntroduction3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/introduction.html"
           >
             Giới thiệu
           </div>
           <div
+            id="linkProducts3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/products.html"
           >
             Sản phẩm
           </div>
           <div
+            id="linkGallery3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/"
           >
             Thư viện ảnh
           </div>
           <div
+            id="linkBlogs3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/blogs.html"
           >
             Tin tức
           </div>
           <div
+            id="linkContact3"
             class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
             data-button-link="/contact.html"
           >
@@ -440,11 +470,13 @@
       >
         <span
           class="w-full capitalize font-monsterrat leading-6 text-xs font-medium"
-          >©2024 Lavale Distillery
+          ><span>©2024 Lavale Distillery</span>
           <br />
-          Hãy sử dụng rượu bia có trách nhiệm
+          <span id="footer1">Hãy sử dụng rượu bia có trách nhiệm</span>
           <br />
-          Chỉ chia sẻ sản phẩm này với người trên 18 tuổi
+          <span id="footer2"
+            >Chỉ chia sẻ sản phẩm này với người trên 18 tuổi</span
+          >
         </span>
       </div>
     </footer>

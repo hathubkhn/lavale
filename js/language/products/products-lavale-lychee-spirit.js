@@ -1,0 +1,143 @@
+let translations = {
+  english: {
+    linkHome: "Home",
+    linkIntroduction: "Introduction",
+    linkProducts: "Products",
+    linkGallery: "Gallery",
+    linkBlogs: "Blogs",
+    linkContact: "Contact",
+    phone: "Phone number",
+    footer1: "Please use alcohol responsibly",
+    footer2: "Only share this product with people over 18 years old",
+    productTitle: "Lavale Vai",
+    productInformation1: "Volume: 500ml",
+    productInformation2: "Concentration: 29% vol ±2°",
+    productInformation3: "Taste: sweet, astringent, rich",
+    productInformation4: "Preference: male, middle-aged",
+    buttonBuy: "Contact to order",
+    productDescription:
+      "We always choose the most expensive and best ingredients in the country to create our wine. Most importantly, the water we get from the laterite water source, with a natural filter core of thousands of layers of laterite flowing over time, will give the purest water. Testing of our water source shows a purity rate 6 times higher than the threshold of normal drinking water. The wine base is cooked with 36 medicinal herbs, Dien Bien glutinous rice type 1. After distillation, the wine will be run through a detoxification machine to remove aldehyde, methanol... and soaked in a jar for at least 1 year.",
+  },
+  vietnamese: {
+    linkHome: "Trang chủ",
+    linkIntroduction: "Giới thiệu",
+    linkProducts: "Sản phẩm",
+    linkGallery: "Thư viện ảnh",
+    linkBlogs: "Tin tức",
+    linkContact: "Liên hệ",
+    phone: "Số điện thoại",
+    footer1: "Hãy sử dụng rượu bia có trách nhiệm",
+    footer2: "Chỉ chia sẻ sản phẩm này với người trên 18 tuổi",
+    productTitle: "Lavale Vải",
+    productInformation1: "Thể tích: 500ml",
+    productInformation2: "Nồng độ: 29% vol ±2°",
+    productInformation3: "Hương vị: ngọt, chát, đậm",
+    productInformation4: "Thiên hướng: nam giới, đứng tuổi",
+    buttonBuy: "Liên hệ để đặt mua",
+    productDescription:
+      "Chúng tôi luôn lựa chọn những nguyên liệu đắt nhất, tốt nhất của đất nước để tạo ra chất rượu của mình. Quan trọng nhất là nguồn nước chúng tôi lấy từ nguồn nước đá ong, với lõi lọc tự nhiên là lớp đá ong hàng ngàn lớp chảy qua thời gian sẽ cho nguồn nước tinh khiết nhất. Kiểm nghiệm nguồn nước của chúng tôi cho tỉ lệ tinh khiết gấp 6 lần ngưỡng nước uống thông thường. Cốt rượu được nấu thêm với men thuốc bắc 36 vị thuốc, gạo nếp Điện Biên loại 1. Rượu sau khi chưng cất sẽ chạy qua máy khử độc tố loại bỏ adehyde, methanol... và ngâm trong chum tối thiểu 1 năm.",
+  },
+};
+
+const languageSelector = document.querySelector(".language-selector");
+
+let linkHome1 = document.getElementById("linkHome1");
+let linkHome2 = document.getElementById("linkHome2");
+let linkHome3 = document.getElementById("linkHome3");
+let linkIntroduction1 = document.getElementById("linkIntroduction1");
+let linkIntroduction2 = document.getElementById("linkIntroduction2");
+let linkIntroduction3 = document.getElementById("linkIntroduction3");
+let linkProducts1 = document.getElementById("linkProducts1");
+let linkProducts2 = document.getElementById("linkProducts2");
+let linkProducts3 = document.getElementById("linkProducts3");
+let linkGallery1 = document.getElementById("linkGallery1");
+let linkGallery2 = document.getElementById("linkGallery2");
+let linkGallery3 = document.getElementById("linkGallery3");
+let linkBlogs1 = document.getElementById("linkBlogs1");
+let linkBlogs2 = document.getElementById("linkBlogs2");
+let linkBlogs3 = document.getElementById("linkBlogs3");
+let linkContact1 = document.getElementById("linkContact1");
+let linkContact2 = document.getElementById("linkContact2");
+let linkContact3 = document.getElementById("linkContact3");
+let phone = document.getElementById("phone");
+let footer1 = document.getElementById("footer1");
+let footer2 = document.getElementById("footer2");
+
+let productTitle = document.getElementById("productTitle");
+let productInformation1 = document.getElementById("productInformation1");
+let productInformation2 = document.getElementById("productInformation2");
+let productInformation3 = document.getElementById("productInformation3");
+let productInformation4 = document.getElementById("productInformation4");
+let buttonBuy = document.getElementById("buttonBuy");
+let productDescription = document.getElementById("productDescription");
+
+languageSelector.addEventListener("change", (e) => setLanguage(e.target.value));
+
+const setLanguage = (language) => {
+  localStorage.setItem("lang", language);
+
+  if (language === "Vietnamese") {
+    linkHome1.innerText = translations.vietnamese.linkHome;
+    linkHome2.innerText = translations.vietnamese.linkHome;
+    linkHome3.innerText = translations.vietnamese.linkHome;
+    linkIntroduction1.innerText = translations.vietnamese.linkIntroduction;
+    linkIntroduction2.innerText = translations.vietnamese.linkIntroduction;
+    linkIntroduction3.innerText = translations.vietnamese.linkIntroduction;
+    linkProducts1.innerText = translations.vietnamese.linkProducts;
+    linkProducts2.innerText = translations.vietnamese.linkProducts;
+    linkProducts3.innerText = translations.vietnamese.linkProducts;
+    linkGallery1.innerText = translations.vietnamese.linkGallery;
+    linkGallery2.innerText = translations.vietnamese.linkGallery;
+    linkGallery3.innerText = translations.vietnamese.linkGallery;
+    linkBlogs1.innerText = translations.vietnamese.linkBlogs;
+    linkBlogs2.innerText = translations.vietnamese.linkBlogs;
+    linkBlogs3.innerText = translations.vietnamese.linkBlogs;
+    linkContact1.innerText = translations.vietnamese.linkContact;
+    linkContact2.innerText = translations.vietnamese.linkContact;
+    linkContact3.innerText = translations.vietnamese.linkContact;
+    phone.innerText = translations.vietnamese.phone;
+    footer1.innerText = translations.vietnamese.footer1;
+    footer2.innerText = translations.vietnamese.footer2;
+
+    productTitle.innerText = translations.vietnamese.productTitle;
+    productInformation1.innerText = translations.vietnamese.productInformation1;
+    productInformation2.innerText = translations.vietnamese.productInformation2;
+    productInformation3.innerText = translations.vietnamese.productInformation3;
+    productInformation4.innerText = translations.vietnamese.productInformation4;
+    buttonBuy.innerText = translations.vietnamese.buttonBuy;
+    productDescription.innerText = translations.vietnamese.productDescription;
+  } else if (language === "English") {
+    linkHome1.innerText = translations.english.linkHome;
+    linkHome2.innerText = translations.english.linkHome;
+    linkHome3.innerText = translations.english.linkHome;
+    linkIntroduction1.innerText = translations.english.linkIntroduction;
+    linkIntroduction2.innerText = translations.english.linkIntroduction;
+    linkIntroduction3.innerText = translations.english.linkIntroduction;
+    linkProducts1.innerText = translations.english.linkProducts;
+    linkProducts2.innerText = translations.english.linkProducts;
+    linkProducts3.innerText = translations.english.linkProducts;
+    linkGallery1.innerText = translations.english.linkGallery;
+    linkGallery2.innerText = translations.english.linkGallery;
+    linkGallery3.innerText = translations.english.linkGallery;
+    linkBlogs1.innerText = translations.english.linkBlogs;
+    linkBlogs2.innerText = translations.english.linkBlogs;
+    linkBlogs3.innerText = translations.english.linkBlogs;
+    linkContact1.innerText = translations.english.linkContact;
+    linkContact2.innerText = translations.english.linkContact;
+    linkContact3.innerText = translations.english.linkContact;
+    phone.innerText = translations.english.phone;
+    footer1.innerText = translations.english.footer1;
+    footer2.innerText = translations.english.footer2;
+
+    productTitle.innerText = translations.english.productTitle;
+    productInformation1.innerText = translations.english.productInformation1;
+    productInformation2.innerText = translations.english.productInformation2;
+    productInformation3.innerText = translations.english.productInformation3;
+    productInformation4.innerText = translations.english.productInformation4;
+    buttonBuy.innerText = translations.english.buttonBuy;
+    productDescription.innerText = translations.english.productDescription;
+  }
+};
+
+languageSelector.value = localStorage.getItem("lang") || "Vietnamese";
+setLanguage(languageSelector.value);
