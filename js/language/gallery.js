@@ -30,6 +30,8 @@ let translations = {
 };
 
 const languageSelector = document.querySelector(".language-selector");
+const languageSelector1 = document.querySelector(".language-selector-1");
+const languageSelector2 = document.querySelector(".language-selector-2");
 
 let linkHome1 = document.getElementById("linkHome1");
 let linkHome2 = document.getElementById("linkHome2");
@@ -57,9 +59,18 @@ let galleryTitle = document.getElementById("galleryTitle");
 let galleryDescription = document.getElementById("galleryDescription");
 
 languageSelector.addEventListener("change", (e) => setLanguage(e.target.value));
+languageSelector1.addEventListener("change", (e) =>
+  setLanguage(e.target.value)
+);
+languageSelector2.addEventListener("change", (e) =>
+  setLanguage(e.target.value)
+);
 
 const setLanguage = (language) => {
   localStorage.setItem("lang", language);
+  languageSelector.value = language;
+  languageSelector1.value = language;
+  languageSelector2.value = language;
 
   if (language === "Vietnamese") {
     linkHome1.innerText = translations.vietnamese.linkHome;
