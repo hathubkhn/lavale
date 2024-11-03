@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/menu.responsive.js"></script>
+    <script src="./js/button.link.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js" type="module"></script>
+    <script
+      src="./js/language/blogs/blog-ha-nhi-show.js"
+      type="module"
+    ></script>
+
+    <style>
+      .fade-in-right {
+        animation: fade-in-right 0.5s ease-out;
+      }
+
+      @keyframes fade-in-right {
+        0% {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .fade-out-right {
+        animation: fade-out-right 0.5s ease-out;
+      }
+
+      @keyframes fade-out-right {
+        0% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+      }
+    </style>
+
+    <title>Lavale</title>
+  </head>
+
+  <body class="relative p-0 m-0 w-full h-full overflow-x-hidden contain">
+    <header
+      class="relative p-0 w-full min-h-[9rem] z-0 overflow-hidden aspect-[375/70] flex items-center z-2 bg-lavale md:aspect-[834/96] lg:aspect-[1440/140]"
+    >
+      <!-- <img src="./img/cover.jfif" class="h-full aspect-[427/640]" /> -->
+
+      <div class="absolute left-0 top-0 w-full z-8">
+        <div
+          class="w-full flex-row items-center hidden justify-center from-lavalemenu/40 md:flex md:aspect-[834/140] lg:aspect-[1440/140]"
+          data-menu="full-menu"
+        >
+          <div class="w-[40%] flex items-end justify-end">
+            <a
+              id="linkHome1"
+              class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+              href="/"
+            >
+              Trang Chủ
+            </a>
+            <a
+              id="linkIntroduction1"
+              href="/introduction.html"
+              class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+            >
+              Giới thiệu
+            </a>
+            <a
+              id="linkProducts1"
+              href="/products.html"
+              class="h-6 leading-6 uppercase mr-[5%] lg:mr-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+            >
+              Sản phẩm
+            </a>
+          </div>
+          <img src="./img//logo.png" class="h-full" />
+          <div class="w-[40%] flex">
+            <a
+              id="linkGallery1"
+              href="/gallery.html"
+              class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active z-10"
+            >
+              Thư viện ảnh
+            </a>
+            <a
+              id="linkBlogs1"
+              href="/blogs.html"
+              class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-active border-b-[3px] hover:cursor-pointer border-active"
+            >
+              Tin tức
+            </a>
+            <a
+              id="linkContact1"
+              href="/contact.html"
+              class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active z-10"
+            >
+              Liên hệ
+            </a>
+            <div
+              class="hidden h-6 md:flex ml-[5%] lg:ml-[14%] items-center relative"
+            >
+              <img src="./img/global-icon-active.svg" />
+              <select
+                class="language-selector-1 absolute top-0 right-0 opacity-0 text-active font-monsterrat bg-transparent border-none outline-none py-2 pl-2"
+              >
+                <option class="text-black">Vietnamese</option>
+                <option class="text-black">English</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative w-full flex-row items-center flex justify-center align-center aspect-[375/70] bg-gradient-to-b from-lavalemenu/40 md:hidden"
+          data-menu="simple-menu-show"
+        >
+          <!-- <img src="./img/logo1.png" class="h-full"> -->
+          <div
+            class="bg-center bg-no-repeat bg-cover bg-logo h-full aspect-[94.35/70]"
+          ></div>
+          <div
+            class="absolute h-full top-0 right-0 flex items-center flex-col justify-center pr-8"
+            data-menu="toggle-open"
+          >
+            <img src="./img/menu.svg" class="h-[23%] float-right" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="fixed left-0 top-0 bottom-0 right-0 z-50 h-full w-full bg-lavale aspect-[375/718] hidden"
+      data-menu="simple-menu-popup"
+    >
+      <div class="relative w-full h-full">
+        <div class="absolute left-0 top-0 w-full z-10 aspect-[375/718]">
+          <div
+            class="relative w-full flex-row items-center flex justify-center align-center aspect-[375/70] bg-gradient-to-b from-lavalemenu/40 md:hidden mb-10px"
+          >
+            <!-- <img src="./img/logo1.png" class="h-full"> -->
+            <div
+              class="bg-center bg-no-repeat bg-cover bg-logo h-full aspect-[94.35/70]"
+            ></div>
+            <div
+              class="absolute h-full top-0 right-0 flex items-center flex-col justify-center pr-8"
+              data-menu="toggle-close"
+            >
+              <img src="./img/close.svg" class="h-[23%] float-right" />
+            </div>
+          </div>
+
+          <div
+            class="w-full flex flex-col justify-center align-center items-center pt-[32px]"
+          >
+            <a
+              id="linkHome2"
+              href="/"
+              class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+            >
+              Trang Chủ
+            </a>
+            <a
+              id="linkIntroduction2"
+              href="/introduction.html"
+              class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+            >
+              Giới thiệu
+            </a>
+            <a
+              id="linkProducts2"
+              href="/products.html"
+              class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+            >
+              Sản phẩm
+            </a>
+            <a
+              id="linkGallery2"
+              href="/gallery.html"
+              class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+            >
+              Thư viện ảnh
+            </a>
+            <a
+              id="linkBlogs2"
+              href="/blogs.html"
+              class="block h-6 leading-normal text-[16px] font-semibold uppercase text-active border-b-[3px] hover:cursor-pointer border-active text-center mb-[32px]"
+            >
+              Tin tức
+            </a>
+            <a
+              id="linkContact2"
+              href="/contact.html"
+              class="h-6 leading-normal text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]"
+            >
+              Liên hệ
+            </a>
+            <div class="flex items-center border-none">
+              <img src="./img/global-icon.svg" />
+              <select
+                class="language-selector-2 text-center text-white font-monsterrat bg-transparent border-none outline-none py-2 pl-2"
+              >
+                <option class="text-black">Vietnamese</option>
+                <option class="text-black">English</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div
+          class="fixed w-full bottom-0 left-0 flex flex-col align-center justify-center items-center"
+        >
+          <div class="flex flex-row mb-[4px]">
+            <span
+              id="phone"
+              class="text-[0.9375rem] leading-normal mr-[10px] font-monsterrat text-white/60"
+              >Điện thoại</span
+            >
+            <span
+              class="text-[0.9375rem] leading-normal font-monsterrat text-white"
+              >0972897891</span
+            >
+          </div>
+          <div class="flex flex-row">
+            <span
+              class="text-[0.9375rem] leading-normal mr-[10px] font-monsterrat text-white/60 mb-10px"
+              >Email</span
+            >
+            <span
+              class="text-[0.9375rem] leading-normal font-monsterrat text-white"
+              >cskh@lavale.vn</span
+            >
+          </div>
+          <div class="w-full flex flex-row py-[16px]">
+            <span
+              class="w-full text-center font-monsterrat text-white/60 font-semibold text-[12px] leading-[20px]"
+              >© LAVALE 2024</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="relative bg-lavale w-full h-fit overflow-hidden">
+      <div class="w-full bg-transparent z-9">
+        <div
+          class="flex flex-col w-[91.5%] mx-auto my-[88px] items-center align-center justify-center z-10 md:w-[92.3%] lg:w-[88.89%]"
+        >
+          <h1
+            id="blogTitle"
+            class="w-full text-center text-5xl leading-normal text-white font-display font-medium capitalize mb-16"
+          >
+            Thần tượng Hà Nhi và đêm diễn đỉnh cao cùng thương hiệu Rượu Lavale
+            tại nhà hàng Tòng Livehouse.
+          </h1>
+          <!-- <span
+            class="block w-full text-xl text-center text-white/70 font-medium font-monsterrat mb-[56px]"
+          >
+            29.12.1964
+          </span> -->
+
+          <div class="w-full">
+            <p
+              id="blogText1"
+              class="block text-justify font-monsterrat font-[0.9375rem] leading-normal text-white/70 mb-[32px] lg:px-[15%]"
+            >
+              Vào một buổi tối đáng nhớ tại nhà hàng Tòng Livehouse, khán giả đã
+              được chứng kiến một đêm diễn đỉnh cao của Hà Nhi - một trong những
+              thần tượng âm nhạc được yêu thích nhất hiện nay. Sự kiện không chỉ
+              là một bữa tiệc âm nhạc thăng hoa, mà còn là dịp đặc biệt để
+              thương hiệu Rượu Lavale ghi dấu ấn trong lòng công chúng.
+            </p>
+            <div
+              class="relative w-full lg:w-[70%] mx-auto flex items-center justify-center align-center mb-[32px] rounded-md"
+            >
+              <img src="./img/home-news3.png" class="w-full" />
+              <img
+                src="./img/spliter.png"
+                class="w-full aspect-[333/24] absolute scale-x-[-1] top-[-1px] left-0"
+              />
+              <img
+                src="./img/spliter-vertical.png"
+                class="h-full aspect-[24/480] absolute scale-y-[-1] top-0 left-[-1px]"
+              />
+              <img
+                src="./img/spliter-vertical.png"
+                class="h-full aspect-[24/480] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+              />
+              <img
+                src="./img/spliter.png"
+                class="w-full aspect-[333/24] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+              />
+            </div>
+            <p
+              id="blogText2"
+              class="block text-justify font-monsterrat font-[0.9375rem] leading-normal text-white/70 mb-[32px] lg:px-[15%] mb-12"
+            >
+              Hà Nhi, với giọng hát đầy nội lực và phong cách biểu diễn lôi
+              cuốn, đã mang đến những ca khúc đậm chất cảm xúc, thu hút mọi ánh
+              nhìn từ khán giả. Cô không chỉ chinh phục khán giả bằng khả năng
+              thanh nhạc đỉnh cao mà còn bởi phong cách trình diễn cuốn hút,
+              khiến cả không gian Tòng Livehouse như bùng nổ theo từng nốt nhạc.
+              Những bản hit của cô được thể hiện một cách mới mẻ và sống động
+              hơn bao giờ hết, tạo nên một không khí sôi động và tràn đầy năng
+              lượng.
+            </p>
+            <p
+              id="blogText3"
+              class="block text-justify font-monsterrat font-[0.9375rem] leading-normal text-white/70 mb-[32px] lg:px-[15%] mb-12"
+            >
+              Điểm nhấn của đêm diễn không thể không kể đến sự kết hợp hoàn hảo
+              giữa âm nhạc và Rượu Lavale. Thương hiệu rượu này đã khéo léo tận
+              dụng sự kiện để tạo ra những khoảnh khắc đáng nhớ, không chỉ là
+              màn trình diễn mãn nhãn mà còn là một trải nghiệm đầy tinh tế về
+              hương vị và phong cách sống. Tại sự kiện, khán giả có cơ hội
+              thưởng thức những ly rượu Lavale đặc biệt, mang đến sự kết hợp
+              hoàn hảo giữa âm nhạc và thưởng thức rượu cao cấp.
+            </p>
+            <div
+              class="relative w-full lg:w-[70%] mx-auto flex items-center justify-center align-center mb-[32px] rounded-md"
+            >
+              <img src="./img/ha-nhi-show.jpg" class="w-full" />
+              <img
+                src="./img/spliter.png"
+                class="w-full aspect-[333/24] absolute scale-x-[-1] top-[-1px] left-0"
+              />
+              <img
+                src="./img/spliter-vertical.png"
+                class="h-full aspect-[24/480] absolute scale-y-[-1] top-0 left-[-1px]"
+              />
+              <img
+                src="./img/spliter-vertical.png"
+                class="h-full aspect-[24/480] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+              />
+              <img
+                src="./img/spliter.png"
+                class="w-full aspect-[333/24] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+              />
+            </div>
+            <p
+              id="blogText4"
+              class="block text-justify font-monsterrat font-[0.9375rem] leading-normal text-white/70 mb-[32px] lg:px-[15%] mb-12"
+            >
+              Tòng Livehouse, với không gian sang trọng và ấm cúng, đã trở thành
+              một sân khấu lý tưởng cho Hà Nhi và Lavale. Những hiệu ứng ánh
+              sáng đẹp mắt cùng âm thanh sống động đã tạo nên một đêm nhạc hoàn
+              hảo, gắn kết giữa nghệ thuật và phong cách sống hiện đại.
+            </p>
+            <p
+              id="blogText5"
+              class="block text-justify font-monsterrat font-[0.9375rem] leading-normal text-white/70 mb-[32px] lg:px-[15%] mb-12"
+            >
+              Sự kiện này không chỉ là dịp để Hà Nhi tỏa sáng mà còn giúp Rượu
+              Lavale củng cố vị thế của mình như một thương hiệu rượu cao cấp,
+              đẳng cấp, luôn gắn liền với những trải nghiệm tinh tế và đáng nhớ.
+              Đêm diễn tại Tòng Livehouse chắc chắn sẽ trở thành một dấu mốc
+              quan trọng trong chuỗi sự kiện quảng bá của Lavale, khi họ không
+              chỉ truyền tải thông điệp về chất lượng mà còn mang đến một trải
+              nghiệm văn hóa giải trí độc đáo cho khách hàng.
+            </p>
+          </div>
+
+          <!-- <div
+            class="relative w-full aspect-[375/72] bg-lavale mb-[56px] flex justify-center align-center items-center border-0 p-0 md:aspect-[834/72] lg:aspect-[1440/72]"
+          >
+            <img src="img/spliter-diamond.svg" />
+          </div> -->
+
+          <div class="w-full bg-transparent z-9 mt-24">
+            <div
+              class="flex flex-col w-full mx-auto items-center align-center justify-center p-0 z-10 lg:px-[9%]"
+            >
+              <h1
+                id="otherBlogs"
+                class="w-full text-center text-[36px] leading-[48px] text-white font-display mb-[32px] capitalize"
+              >
+                Những bài viết khác
+              </h1>
+              <div
+                class="grid grid-cols-1 grid-rows-2 gap-[16px] w-full justify-between align-center z-10 md:grid-cols-2 md:grid-rows-1"
+              >
+                <div class="flex flex-col rounded-md justify-between">
+                  <div class="relative mb-6">
+                    <img
+                      src="./img/spliter.png"
+                      class="w-full aspect-[523/16] absolute scale-x-[-1] top-[-1px] left-0"
+                    />
+                    <img
+                      src="./img/spliter-vertical.png"
+                      class="h-full aspect-[16/192] absolute scale-y-[-1] top-0 left-[-1px]"
+                    />
+                    <img
+                      src="./img/spliter-vertical.png"
+                      class="h-full aspect-[16/192] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+                    />
+                    <img
+                      src="./img/spliter.png"
+                      class="w-full aspect-[523/16] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+                    />
+                    <img src="./img/home-news1.png" class="w-full rounded-md" />
+                  </div>
+                  <span
+                    id="otherBlog1"
+                    class="block text-left font-medium font-monsterrat text-lg text-white"
+                  >
+                    Vì sao gọi là quốc tửu?
+                  </span>
+                  <span
+                    id="details1"
+                    class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
+                    data-button-link="/blog-national-spirit.html"
+                  >
+                    Xem chi tiết
+                    <svg
+                      class="h-6 w-6 ml-4"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <line x1="13" y1="18" x2="19" y2="12" />
+                      <line x1="13" y1="6" x2="19" y2="12" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="flex flex-col rounded-md justify-between">
+                  <div class="relative mb-6">
+                    <img
+                      src="./img/spliter.png"
+                      class="w-full aspect-[523/16] absolute scale-x-[-1] top-[-1px] left-0"
+                    />
+                    <img
+                      src="./img/spliter-vertical.png"
+                      class="h-full aspect-[16/192] absolute scale-y-[-1] top-0 left-[-1px]"
+                    />
+                    <img
+                      src="./img/spliter-vertical.png"
+                      class="h-full aspect-[16/192] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
+                    />
+                    <img
+                      src="./img/spliter.png"
+                      class="w-full aspect-[523/16] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
+                    />
+                    <img src="./img/home-news2.png" class="w-full rounded-md" />
+                  </div>
+                  <span
+                    id="otherBlog2"
+                    class="block text-left font-medium font-monsterrat text-lg text-white"
+                  >
+                    Một lần nữa DJ Tilo & MC QuanK quay lại thắp sáng sân khấu
+                    cùng Lavale
+                  </span>
+                  <span
+                    id="details2"
+                    class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
+                    data-button-link="/blog-lavale-show.html"
+                  >
+                    Xem chi tiết
+                    <svg
+                      class="h-6 w-6 ml-4"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <line x1="13" y1="18" x2="19" y2="12" />
+                      <line x1="13" y1="6" x2="19" y2="12" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="relative flex flex-col bg-lavaledark w-full z-20">
+      <div
+        class="absolute w-full aspect-[375/72] top-[-1px] left-0 bg-center bg-no-repeat bg-cover bg-spliter scale-x-[-1] border-0 p-0 md:aspect-[834/72] lg:aspect-[1440/72]"
+      ></div>
+      <div
+        class="flex flex-col w-full mx-auto items-center align-center justify-center md:w-[88.89%] py-14"
+      >
+        <div
+          class="flex flex-col gap-6 relative w-full justify-center items-center md:flex-row mt-16 md:mt-0"
+        >
+          <img src="./img/logo.png" class="w-32 md:w-56" />
+          <div
+            class="flex items-center md:absolute left-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%] border-none"
+          >
+            <img src="./img/global-icon.svg" />
+            <select
+              class="language-selector text-white font-monsterrat bg-transparent border-none outline-none py-2 pl-2"
+            >
+              <option class="text-black">Vietnamese</option>
+              <option class="text-black">English</option>
+            </select>
+          </div>
+          <div
+            class="flex items-center gap-4 md:absolute right-0 top-[50%] translate-y-[-100%] md:translate-y-[-50%]"
+          >
+            <a
+              href="https://www.facebook.com/LavaleSpirit?gidzl=BPcl82rpLbiYWAeXAMXGN2Q0hYGnRbTRC8Ug8smxNbXZqV4dOpLP3cAEyd5jCGzTOThxSJ8vtSrD9dLGLG"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/facebook.svg" />
+            </a>
+            <a
+              href="https://www.instagram.com/lavale_distillery/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/instagram.svg" />
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-between md:w-full md:flex-row gap-6 md:gap-0 lg:justify-center h-fit"
+        >
+          <div
+            id="linkHome3"
+            class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
+            data-button-link="/"
+          >
+            Trang chủ
+          </div>
+          <div
+            id="linkIntroduction3"
+            class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
+            data-button-link="/introduction.html"
+          >
+            Giới thiệu
+          </div>
+          <div
+            id="linkProducts3"
+            class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
+            data-button-link="/products.html"
+          >
+            Sản phẩm
+          </div>
+          <div
+            id="linkGallery3"
+            class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
+            data-button-link="/"
+          >
+            Thư viện ảnh
+          </div>
+          <div
+            id="linkBlogs3"
+            class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
+            data-button-link="/blogs.html"
+          >
+            Tin tức
+          </div>
+          <div
+            id="linkContact3"
+            class="text-center font-monsterrat text-white lg:px-6 cursor-pointer hover:text-active"
+            data-button-link="/contact.html"
+          >
+            Liên hệ
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-row w-[88.89%] mx-auto align-center border-t-[1px] border-[#feefc0] pt-4 pb-12 text-[#e1f5fa]"
+      >
+        <span
+          class="w-full capitalize font-monsterrat leading-6 text-xs font-medium"
+          ><span>©2024 Lavale Distillery</span>
+          <br />
+          <span id="footer1">Hãy sử dụng rượu bia có trách nhiệm</span>
+          <br />
+          <span id="footer2"
+            >Chỉ chia sẻ sản phẩm này với người trên 18 tuổi</span
+          >
+        </span>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    MenuResponsive.init();
+    ButtonLink.init();
+  </script>
+</html>

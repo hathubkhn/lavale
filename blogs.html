@@ -70,15 +70,6 @@
       <!-- <img src="./img/cover.jfif" class="h-full aspect-[427/640]" /> -->
 
       <div class="absolute left-0 top-0 w-full z-8">
-        <div class="hidden md:flex ml-[2%] lg:ml-[6%] items-center border-none">
-          <img src="./img/global-icon-active.svg" />
-          <select
-            class="language-selector-1 text-active font-monsterrat bg-transparent border-none outline-none py-2 pl-2"
-          >
-            <option class="text-black">Vietnamese</option>
-            <option class="text-black">English</option>
-          </select>
-        </div>
         <div
           class="w-full flex-row items-center hidden justify-center from-lavalemenu/40 md:flex md:aspect-[834/140] lg:aspect-[1440/140]"
           data-menu="full-menu"
@@ -111,7 +102,7 @@
             <a
               id="linkGallery1"
               href="/gallery.html"
-              class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+              class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active z-10"
             >
               Thư viện ảnh
             </a>
@@ -125,10 +116,21 @@
             <a
               id="linkContact1"
               href="/contact.html"
-              class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active"
+              class="h-6 leading-6 uppercase ml-[5%] lg:ml-[14%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active z-10"
             >
               Liên hệ
             </a>
+            <div
+              class="hidden h-6 md:flex ml-[5%] lg:ml-[14%] items-center relative"
+            >
+              <img src="./img/global-icon-active.svg" />
+              <select
+                class="language-selector-1 absolute top-0 right-0 opacity-0 text-active font-monsterrat bg-transparent border-none outline-none py-2 pl-2"
+              >
+                <option class="text-black">Vietnamese</option>
+                <option class="text-black">English</option>
+              </select>
+            </div>
           </div>
         </div>
         <div
@@ -310,7 +312,7 @@
                 </span>
                 <span
                   class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
-                  data-button-link="/blog-1.html"
+                  data-button-link="/blog-national-spirit.html"
                 >
                   <span id="details1"> Xem chi tiết </span>
                   <svg
@@ -360,7 +362,7 @@
                 </span>
                 <span
                   class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
-                  data-button-link="/blog-1.html"
+                  data-button-link="/blog-lavale-show.html"
                 >
                   <span id="details2"> Xem chi tiết </span>
                   <svg
@@ -409,11 +411,12 @@
                   id="blogTitle3"
                   class="block text-left font-medium font-monsterrat text-lg text-white"
                 >
-                  Thần tượng Hà Nhi và đêm diễn đỉnh cao cùng tại Tòng Livehouse
+                  Thần tượng Hà Nhi và đêm diễn đỉnh cao cùng thương hiệu Rượu
+                  Lavale tại nhà hàng Tòng Livehouse.
                 </span>
                 <span
                   class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
-                  data-button-link="/blog-1.html"
+                  data-button-link="/blog-ha-nhi-show.html"
                 >
                   <span id="details3">Xem chi tiết</span>
                   <svg
@@ -462,112 +465,9 @@
                 </span>
                 <span
                   class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
-                  data-button-link="/blog-1.html"
+                  data-button-link="/blog-lavale-show.html"
                 >
                   <span id="details4">Xem chi tiết</span>
-                  <svg
-                    class="h-6 w-6 ml-4"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <line x1="13" y1="18" x2="19" y2="12" />
-                    <line x1="13" y1="6" x2="19" y2="12" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <div
-              class="grid grid-cols-1 grid-rows-2 gap-4 w-full justify-between align-center z-10 md:grid-cols-2 md:grid-rows-1"
-            >
-              <div class="flex flex-col rounded-md justify-between">
-                <div class="relative mb-6">
-                  <img
-                    src="./img/spliter.png"
-                    class="w-full aspect-[523/16] absolute scale-x-[-1] top-[-1px] left-0"
-                  />
-                  <img
-                    src="./img/spliter-vertical.png"
-                    class="h-full aspect-[16/192] absolute scale-y-[-1] top-0 left-[-1px]"
-                  />
-                  <img
-                    src="./img/spliter-vertical.png"
-                    class="h-full aspect-[16/192] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
-                  />
-                  <img
-                    src="./img/spliter.png"
-                    class="w-full aspect-[523/16] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
-                  />
-                  <img src="./img/homepage.png" class="w-full rounded-md" />
-                </div>
-                <span
-                  id="blogTitle5"
-                  class="block text-left font-medium font-monsterrat text-lg text-white"
-                >
-                  Tham gia các sự kiện văn hóa nổi bật cùng Lavale
-                </span>
-                <span
-                  class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
-                  data-button-link="/blog-1.html"
-                >
-                  <span id="details5">Xem chi tiết</span>
-                  <svg
-                    class="h-6 w-6 ml-4"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <line x1="13" y1="18" x2="19" y2="12" />
-                    <line x1="13" y1="6" x2="19" y2="12" />
-                  </svg>
-                </span>
-              </div>
-              <div class="flex flex-col rounded-md justify-between">
-                <div class="relative mb-6">
-                  <img
-                    src="./img/spliter.png"
-                    class="w-full aspect-[523/16] absolute scale-x-[-1] top-[-1px] left-0"
-                  />
-                  <img
-                    src="./img/spliter-vertical.png"
-                    class="h-full aspect-[16/192] absolute scale-y-[-1] top-0 left-[-1px]"
-                  />
-                  <img
-                    src="./img/spliter-vertical.png"
-                    class="h-full aspect-[16/192] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]"
-                  />
-                  <img
-                    src="./img/spliter.png"
-                    class="w-full aspect-[523/16] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"
-                  />
-                  <img src="./img/gallery1.png" class="w-full rounded-md" />
-                </div>
-                <span
-                  id="blogTitle6"
-                  class="block text-left font-medium font-monsterrat text-lg text-white"
-                >
-                  Một lần nữa DJ Tilo & MC QuanK lại thắp sáng sân khấu cùng
-                  Lavale
-                </span>
-                <span
-                  class="flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white py-6 cursor-pointer hover:text-active"
-                  data-button-link="/blog-1.html"
-                >
-                  <span id="details6">Xem chi tiết</span>
                   <svg
                     class="h-6 w-6 ml-4"
                     width="24"

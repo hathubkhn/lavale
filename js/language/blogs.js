@@ -11,13 +11,12 @@ let translations = {
     footer2: "Only share this product with people over 18 years old",
     news: "News",
     latestNews: "Lavale's latest wine news and insights",
-    blogTitle1: "Why is it called national wine?",
+    blogTitle1: "Why is it called national spirit?",
     blogTitle2:
       "Once again DJ Tilo & MC QuanK return to light up the stage with Lavale",
-    blogTitle3: "Singer Ha Nhi and the ultimate performance at Tong Livehouse",
+    blogTitle3:
+      "Singer Ha Nhi and the top performance with Lavale Wine brand at Tong Livehouse restaurant.",
     blogTitle4: "Join outstanding cultural events with Lavale",
-    blogTitle5: "Join outstanding cultural events with Lavale",
-    blogTitle6: "Once again DJ Tilo & MC QuanK light up the stage with Lavale",
     details: "Details",
   },
   vietnamese: {
@@ -36,11 +35,8 @@ let translations = {
     blogTitle2:
       "Một lần nữa DJ Tilo & MC QuanK quay lại thắp sáng sân khấu cùng Lavale",
     blogTitle3:
-      "Thần tượng Hà Nhi và đêm diễn đỉnh cao cùng tại Tòng Livehouse",
+      "Thần tượng Hà Nhi và đêm diễn đỉnh cao cùng thương hiệu Rượu Lavale tại nhà hàng Tòng Livehouse.",
     blogTitle4: "Tham gia các sự kiện văn hóa nổi bật cùng Lavale",
-    blogTitle5: "Tham gia các sự kiện văn hóa nổi bật cùng Lavale",
-    blogTitle6:
-      "Một lần nữa DJ Tilo & MC QuanK lại thắp sáng sân khấu cùng Lavale",
     details: "Xem chi tiết",
   },
 };
@@ -77,14 +73,10 @@ let blogTitle1 = document.getElementById("blogTitle1");
 let blogTitle2 = document.getElementById("blogTitle2");
 let blogTitle3 = document.getElementById("blogTitle3");
 let blogTitle4 = document.getElementById("blogTitle4");
-let blogTitle5 = document.getElementById("blogTitle5");
-let blogTitle6 = document.getElementById("blogTitle6");
 let details1 = document.getElementById("details1");
 let details2 = document.getElementById("details2");
 let details3 = document.getElementById("details3");
 let details4 = document.getElementById("details4");
-let details5 = document.getElementById("details5");
-let details6 = document.getElementById("details6");
 
 languageSelector.addEventListener("change", (e) => setLanguage(e.target.value));
 languageSelector1.addEventListener("change", (e) =>
@@ -129,14 +121,10 @@ const setLanguage = (language) => {
     blogTitle2.innerText = translations.vietnamese.blogTitle2;
     blogTitle3.innerText = translations.vietnamese.blogTitle3;
     blogTitle4.innerText = translations.vietnamese.blogTitle4;
-    blogTitle5.innerText = translations.vietnamese.blogTitle5;
-    blogTitle6.innerText = translations.vietnamese.blogTitle6;
     details1.innerText = translations.vietnamese.details;
     details2.innerText = translations.vietnamese.details;
     details3.innerText = translations.vietnamese.details;
     details4.innerText = translations.vietnamese.details;
-    details5.innerText = translations.vietnamese.details;
-    details6.innerText = translations.vietnamese.details;
   } else if (language === "English") {
     linkHome1.innerText = translations.english.linkHome;
     linkHome2.innerText = translations.english.linkHome;
@@ -166,14 +154,10 @@ const setLanguage = (language) => {
     blogTitle2.innerText = translations.english.blogTitle2;
     blogTitle3.innerText = translations.english.blogTitle3;
     blogTitle4.innerText = translations.english.blogTitle4;
-    blogTitle5.innerText = translations.english.blogTitle5;
-    blogTitle6.innerText = translations.english.blogTitle6;
     details1.innerText = translations.english.details;
     details2.innerText = translations.english.details;
     details3.innerText = translations.english.details;
     details4.innerText = translations.english.details;
-    details5.innerText = translations.english.details;
-    details6.innerText = translations.english.details;
   }
 };
 

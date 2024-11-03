@@ -12,33 +12,33 @@ let translations = {
 
     introductionTitle: "Lavale Distillery",
     introductionDescription:
-      "Our founders are a group of shareholders from many different fields of life but share a common passion. Preserving tradition and aspiring for more, Lavale wishes to elevate Vietnamese wine to reach out to all five continents, creating pride in the national spirit for the drops of wine distilled on the S-shaped land of a thousand years of civilization.",
+      "Lavale Distillery. Our founders are a group of shareholders from multiple fields but share a common passion. Preserving tradition and craving for more, Lavale strive to elevate Vietnamese's Spirit to reach out to the five continents, creating pride in the national spirit for every drop of spirit distilled on the S Shaped land of a thousand years of civilization.",
     introductionTitle1: "Trees",
     introductionDescription1:
-      "The apple is a symbol of the ripe fruit, the quintessential product of Vietnam's land and sky.",
+      "Trees are symbol of the ripe fruit, the quintessential product of Vietnam's land and sky.",
     introductionTitle2: "Mountains",
     introductionDescription2:
       "Mountains are powerful symbols of confidence, adventure and conquest. They also represent nature and the openness of the outdoors, as well as the refreshing spirit of enjoying Lavale wine",
     introductionTitle3: "Rice Grain - Real Pearl",
     introductionDescription3:
-      "Rice grains are an image closely associated with Vietnamese rice culture, and are also the core essence when distilling alcohol.",
+      "Rice, Rice grains are an image closely associated with Vietnamese rice culture, and also the core essence when distilling alcohol",
     introductionSlogan1: "Traveling around the world,",
     introductionSlogan2: "China has Maotai",
     introductionSlogan3: "Japan has Sake…",
     introductionSlogan4: "What does Vietnam have?",
     introductionTitle4: "Vision",
     introductionDescription41:
-      "Russian Vodka, Scottish Whiskey, Mexican Tequila, Cuban Rum, British Gin - when mentioning famous liquors in the world, they are all associated with the image of a country like an impregnable fortress. Even our Asian friends around us have affirmed their own national liquors such as Korean Soju, Japanese Sake, Chinese Maotai. What does Vietnam have?",
+      "Russian Vodka, Scottish Whiskey, Mexican Tequila, Cuban Rum, British Gin - every famous liquors are associated with a country like a untouchable fortress. Even our Asian neighbours also have their own national liquors such as Korean Soju, Japanese Sake, Chinese Maotai. What does Vietnam have?People have heard about “Quoc Lui” but it has never been established and recognized as the national spirit of our country. In Vietnam, many people make spirit, but it's only stop at personal use limited in a small circle. National Spirit doesn't find a common voice among spirit makers. That is why the founders decided to establish the Lavale distilerry  reach out to the five continents. The combination of mountain berries, pure spring water and the sweetness of rice grain represents the best Vietnam have to offer to international friends.",
     introductionDescription42:
       "People have heard about Quoc Lui but it has never been built and recognized as the national spirit of our country. In Vietnam, many people make wine, but it is only for personal use limited to a small circle. Quoc Tuu cannot find a common voice among all wine makers. That is why the founders decided to establish the Lavale wine brand to compete with the five continents. The combination of mountain berries, pure spring water and the sweet aroma of rice and products represents the quintessence of the S-shaped land to international friends",
     introductionTitle5: "Mission",
     introductionDescription5:
-      "Helping millions of people who love traditional wine for thousands of years, easily recognize and own, confidently enjoy traditional wine products that are ancient but absolutely safe. Producing high quality wine with its own identity, inheriting secrets, developing quintessence, standardizing processes, elevating Vietnamese wine, creating a classy brand on the international consumption map.",
+      "Helping million of traditional spirit lover, to be able to easily recognize and own, confidently enjoy ancient traditional spirit absolutely safe. Our distilerry is high quality and have our own touch, inherit secrets, developing quintessence, standardizing processes, elevating Vietnamese spirit, and establish a well-renowned brand on the international consumption map",
     introductionTitle6: "Dragonfly",
     introductionDescription6:
-      "We chose the Dragonfly as our mascot because it is a very Asian symbol. The dragonfly has the characteristic of only flying over clean water and is never found in stagnant ponds. It also represents the Vietnamese people's spirit of always seeking knowledge and progressing.",
+      "Dragonfly, We chose the Dragonfly as our mascot because it is an Asianly symbol. The dragonfly has a characteristic of only flying over clean water and is never found in stagnant ponds. It is also represent the Vietnamese people's spirit of always striving forward.",
     introductionTitle7:
-      "Lavale brings spontaneous excitement, joy, intimacy and refreshment",
+      "Lavale brings spontaneous excitement, joy, intimacy and refreshment.",
   },
   vietnamese: {
     linkHome: "Trang chủ",

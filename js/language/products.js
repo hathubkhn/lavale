@@ -11,7 +11,7 @@ let translations = {
     footer2: "Only share this product with people over 18 years old",
     productsTitle: "Lavale wine",
     productsDescription:
-      "Every detail on the packaging is meticulously cared for to create a product that is not only beautiful but also conveys the message of the quintessence and high quality of fruit wine from the Northern mountains.",
+      "Every detail on the packaging is meticulously designed and handle with care creating a product not only pleasing the eyes but also able to conveys the message of the quintessence and high quality of fruit spirit from the Nothern mountains",
     lavalePlumSpirit: "Lavale Man",
     lavaleAppleSpirit: "Lavale Tao Meo",
     lavaleLycheeSpirit: "Lavale Vai",

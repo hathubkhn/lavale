@@ -12,34 +12,35 @@ let translations = {
 
     homeTitle: "Lavale - A Vietnam Spirit",
     homeDescription:
-      "Lavale is a Vietnamese signature, a meticulous finishing secret to deliver premium colour, health and passionate flavour. Each ingredient is hand-selected from the best regions of the country to create a truly Vietnamese masterpiece. Plants from the most fertile highlands, water from pure springs that permeate thousands of layers of laterite and the most succulent fruits all combine according to a “lost” recipe to create a special blend.",
-    homeTitle1: "Journey to find “National Wine”",
+      "Lavale is a tasting note of Vietnam, a generational secret of distilling the country spirit to perfection. Each ingredient is hand selected from the country’s best to truly create a masterpiece of Vietnam. Crops from the most fertile platue, water from the deepest fountain source and ripe fruits from the furthest forest all merge together by a “ghost” recipe to create an exceptional blend.",
+    homeTitle1: "The Journey in finding Vietnam's “National Spirit”",
     homeDescription1:
-      "In Vietnam, many people make wine, but only for personal use limited to a small circle. National wine cannot find a common voice among winemakers. That is why the founders decided to establish the Lavale wine brand to compete with the five continents. The combination of mountain berries, pure mineral spring water and the sweet aroma of rice and products represents the quintessence of the S-shaped land to international friends.",
-    homeTitle2: "Essence in every drop of wine",
+      "There are many people brew spirit in Vietnam, but most are for personal use and limited to a small community. National spirit cannot find a common voice among these ditillers. This is why the founders of Lavale decided to established the brand to reach out to the five continents. The combination of mountain berries, pure mineral spring water and the sweetness of rice represent the best ingredients Vietnam have to offer to international friends.",
+    homeTitle2: "Quintessence down to every drop of spirit",
     homeDescription2:
-      "We always choose the most expensive and best ingredients of the country to create our wine. The gift of wine is the water source and we are lucky to have a source of laterite water, with a natural filter core of thousands of layers of laterite flowing over time to give the purest water source. Testing of our water source shows a purity rate 6 times higher than the threshold of normal drinking water. The wine base is cooked with 36 medicinal herbs, Dien Bien glutinous rice type 1. After distillation, the wine will be run through a detoxification machine to remove aldehyde, methanol... and soaked in a jar for at least 1 year.",
+      "We always choose the best and most expensive ingredients of the country to craft our spirit. We are fortunate enough to be blessed with a source of laterite water along with a natural filter of thousands of layers of laterite flowing over time to produce the purest water source. Our water source testing have indiciate a purity ratio that exceeded 6 times higher than normal drinking water threshold. The spirit base is cooked with 36 medical herbs, Dien Bien rice type 1. After distillation, the spirit will go through a detoxification process to remove aldehyde, methanol.... and the spirit will matured undisturbedly for at least 1 year afterward.",
     homeTitle3: "Flavor",
     homeDescription3:
-      "To create the flavor, we travel all over the Northern highlands, deep forests and mountains to select the ripest, largest and most even fruits. In conjunction with the number 1 sugar producer in Vietnam, we order refined grade 1 rock sugar to create a sweet, unsharp flavor. All ingredients used are 100% natural, without any flavorings or chemical ingredients. The marriage between flavor and alcohol then takes place for another year in unglazed earthenware jars, creating a blend of flavor and alcohol.",
-    homeTitle4: "Say Lavale",
+      "To create the flavor, we have travel to all over Northern highlands, deep forests and mountains to select the best, largest and most even fruits. Collaborating with the number 1 sugar producer in Vietnam, we have ordered first grade rock sugar to produce a sweet and unsharp flavor. All ingredients used are 100% naturual, without any flavorings or chemical ingredients. The bond between flavor and alcohol then take places for another year in earth jar, creating a blend of flavor and alcohol.",
+    homeTitle4: "Love Lavale",
     homeDescription4:
-      "With the meticulousness and meticulousness in the wine making process above, we are proud of Lavale wine, which is also a specialty of Lavale. Lavale brings excitement, joy, intimacy and refreshment but not at the price of headaches, fatigue, thirst when waking up tomorrow. Because we are refined and we are quality, our wine will also dissolve very quickly. You can drink at noon drunk with friends talking about the sky and blue clouds, but just ask you for 2,3 hours of sleep, Lavale will return a clear afternoon, without headaches and fatigue.",
-    homeTitle5: "Enjoy Lavale healthily and responsibly",
+      "Brewed with dedication and precision from the process above, We are proud that loving Lavale is also Lavale's specialty. Lavale brings excitement, joy, intimacy and refreshment without the risk of having a headache, tired, hangover when you wake up tomorrow. Because we are refined and chic, our spirit will also dissolve very quickly. You can have a flavorful drinking session at noon with your friends talking about high sky and blue cluods, but if you have a 2,3 hours nap, Lavale will return a clean afternoon, without the headaches for you.",
+    homeTitle5: "Savour Lavale for your health and responsibily",
     lavalePlumSpirit: "Lavale Man",
     lavaleAppleSpirit: "Lavale Tao Meo",
     lavaleLycheeSpirit: "Lavale Vai",
     details: "Details",
     homeTitle6: "Accompanying Lavale",
     homeDescription6:
-      "Join Lavale in events and entertainment activities nationwide, together spreading positive energy.",
+      "Join Lavale in events and leisure entertainment activities nationwide, spreading positive energy together.",
     homeButton6: "Lavale Activities",
     news: "News",
     latestNews: "The latest news and wine knowledge from Lavale",
-    blogTitle1: "Why is it called national wine?",
+    blogTitle1: "Why is it called national spirit?",
     blogTitle2:
       "Once again DJ Tilo & MC QuanK return to light up the stage with Lavale",
-    blogTitle3: "Singer Ha Nhi and the ultimate performance at Tong Livehouse",
+    blogTitle3:
+      "Singer Ha Nhi and the top performance with Lavale Wine brand at Tong Livehouse restaurant.",
     blogTitle4: "Participate in outstanding cultural events with Lavale",
   },
   vietnamese: {
@@ -83,7 +84,7 @@ let translations = {
     blogTitle2:
       "Một lần nữa DJ Tilo & MC QuanK quay lại thắp sáng sân khấu cùng Lavale",
     blogTitle3:
-      "Thần tượng Hà Nhi và đêm diễn đỉnh cao cùng tại Tòng Livehouse",
+      "Thần tượng Hà Nhi và đêm diễn đỉnh cao cùng thương hiệu Rượu Lavale tại nhà hàng Tòng Livehouse.",
     blogTitle4: "Tham gia các sự kiện văn hóa nổi bật cùng Lavale",
   },
 };
