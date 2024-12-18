@@ -173,7 +173,6 @@
         id="video_banner"
         poster="./img/home-news4.png"
         autoplay
-        muted
         loop
         width="auto"
         playsinline
@@ -593,10 +592,6 @@
     function hidePopup() {
       document.getElementById("popup").style.display = "none";
     }
-    setTimeout(() => {
-      const banner = document.getElementById("video_banner");
-      banner.muted = false;
-    }, 1000);
   </script>
 
   <script>
