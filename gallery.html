@@ -593,6 +593,10 @@
     function hidePopup() {
       document.getElementById("popup").style.display = "none";
     }
+    setTimeout(() => {
+      const banner = document.getElementById("video_banner");
+      banner.muted = false;
+    }, 1000);
   </script>
 
   <script>
