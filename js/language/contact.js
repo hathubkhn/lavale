@@ -20,7 +20,7 @@ let translations = {
     contactEmailDescription: "Support, consultation and online ordering",
     contactAddress: "Address",
     contactAddress1: "Northern Region",
-    contactAddressDescription1: "18 Lane 35 Cat Linh, Dong Da, Hanoi",
+    contactAddressDescription1: "226 Yen Hoa Street, Cau Giay, Hanoi",
     contactAddress2: "Southern Region",
     contactAddressDescription2:
       "16/11 Street No. 18, Ward 8, Go Vap, Ho Chi Minh City",
@@ -57,7 +57,7 @@ let translations = {
     contactEmailDescription: "Hỗ trợ, tư vấn và đặt hàng online",
     contactAddress: "Địa chỉ",
     contactAddress1: "Khu vực miền Bắc",
-    contactAddressDescription1: "18 ngõ 35 Cát Linh, Đống Đa, Hà Nội",
+    contactAddressDescription1: "226 Yên Hòa, Cầu Giấy, Hà Nội",
     contactAddress2: "Khu vực miền Nam",
     contactAddressDescription2:
       "16/11 đường số 18, phường 8, Gò Vấp, Hồ Chí Minh",
